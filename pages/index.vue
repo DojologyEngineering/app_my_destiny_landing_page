@@ -1,4 +1,12 @@
 <template>
-  <div class="bg-red-500 h-screen pt-36">home</div>
+  <div class="">
+    <HomeOne />
+  </div>
+  <div class="bg-primary-dark">
+    <HomeTwo />
+  </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HomeOne from '~/components/home/HomeOne.vue';
+import HomeTwo from '~/components/home/HomeTwo.vue';
+</script>

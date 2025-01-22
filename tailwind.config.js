@@ -14,22 +14,19 @@ export default {
       colors: {
         background: { main: '#F8F9FA' },
         primary: {
-          main: '#0057FF',
-          light: '#669ef2',
-          dark: '#0D6DFD',
-          900: '#2B35CA',
+          main: '#FCEFC7CC',
+          light: '#FFF1C9',
+          dark: '#CB942B',
         },
         gray: {
-          main: '#6C7072',
+          main: '#545454',
           light: '#404446',
           dark: '#090A0A',
-          10: '#F7F9FA',
-          20: '#F2F4F5',
-          50: '#979C9E',
-          80: '#404446',
-          70: '#6C7072',
-          90: '#303437',
-          100: '#202325',
+        },
+        colors: {
+          red: {
+            main: '#A1262B',
+          },
         },
         success: {
           main: '#2ECE3E',
@@ -38,14 +35,9 @@ export default {
         info: {
           text: '#FFFFFF',
         },
-        dark: {
-          main: '#090A0A',
-        },
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        quarto: ['Quarto', 'serif'],
-        google: ['Google Sans', 'sans-serif'],
+        khmer: ['"Noto Sans Khmer"', 'sans-serif'],
       },
       fontSize: {
         xs: '12px',
@@ -64,24 +56,6 @@ export default {
         subtitle: '20px', // For subtitles
         typography: '58px',
         heading2: '32px',
-      },
-
-      animation: {
-        'spin-slow': 'spin 10s linear infinite', // Custom spin animation
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
-      },
-      keyframes: {
-        spin: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
-      },
-
-      keyframes: {
-        'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        },
       },
     },
   },
