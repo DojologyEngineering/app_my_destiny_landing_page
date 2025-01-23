@@ -17,6 +17,9 @@ export default {
           main: '#FCEFC7CC',
           light: '#FFF1C9',
           dark: '#CB942B',
+          brown: '#B28D43',
+          yellow: '#FFF3DD',
+          'yellow-dark': '#FFDA74',
         },
         gray: {
           main: '#545454',

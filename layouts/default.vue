@@ -1,14 +1,14 @@
 <template>
   <div class="">
     <div class="fixed top-14 w-full z-10">
-      <Header />
+      <!-- <Header /> -->
     </div>
     <main class="">
       <slot />
     </main>
 
     <div class="z-10">
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </div>
 </template>
