@@ -15,12 +15,12 @@ export default defineNuxtConfig({
       isCustomElement: (tag) => tag === 'iconify-icon',
     },
   },
-  app: {
-    pageTransition: {
-      name: 'pages',
-      mode: 'out-in',
-    },
-  },
+  // app: {
+  //   pageTransition: {
+  //     name: 'pages',
+  //     mode: 'out-in',
+  //   },
+  // },
   modules: ['@nuxtjs/i18n', '@nuxt/image', '@vueuse/motion/nuxt'],
 
   i18n: {

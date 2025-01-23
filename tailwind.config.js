@@ -17,6 +17,9 @@ export default {
           main: '#FCEFC7CC',
           light: '#FFF1C9',
           dark: '#CB942B',
+          brown: '#B28D43',
+          yellow: '#FFF3DD',
+          'yellow-dark': '#FFDA74',
         },
         gray: {
           main: '#545454',
@@ -26,6 +29,7 @@ export default {
         colors: {
           red: {
             main: '#A1262B',
+            light: '#F3DCC2',
           },
         },
         success: {
@@ -34,6 +38,7 @@ export default {
         },
         info: {
           text: '#FFFFFF',
+          light: '#CFF0FF',
         },
       },
       fontFamily: {
