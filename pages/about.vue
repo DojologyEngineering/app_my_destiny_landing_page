@@ -60,12 +60,11 @@
   <div class="relative">
     <NuxtImg
       src="/images/programming-background-with-person-working-with-codes-computer 1.png"
-      height="1052"
-      class="w-full"
+      class="w-full h-[1052px] object-cover"
     />
 
     <div
-      class="absolute bg-primary-main/80 h-auto w-full bottom-16 px-[120px] my-10 py-10 flex flex-col items-center"
+      class="absolute bg-primary-main/80 h-auto w-full bottom-16 lg:px-[120px] px-4 my-10 py-10 flex flex-col items-center"
     >
       <p
         class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"

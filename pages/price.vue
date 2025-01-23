@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="bg-primary-main h-screen pt-36 relative">
+  <div class="bg-primary-main md:h-screen sm:h-[800px] h-[520px] relative">
     <NuxtImg
       src="/images/price_banner.png"
-      class="w-[904px] h-[600px] absolute left-1/2 bottom-0 transform -translate-x-1/2"
+      class="md:w-[900px] w-[551px] md:h-[500px] h-[520px] absolute left-1/2 bottom-0 transform -translate-x-1/2"
     />
   </div>
 

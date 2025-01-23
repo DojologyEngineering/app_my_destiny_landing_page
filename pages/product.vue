@@ -94,14 +94,64 @@ import { NuxtImg } from '#components';
         class="absolute lg:-bottom-16 md:bottom-[230px] bottom-[300px] lg:-right-32 md:right:0 -right-20 w-[587px] h-[630px]"
       />
     </div>
+
+    <div class="bg-info-light relative rounded-[30px]">
+      <div
+        class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] pt-[400px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
+      >
+        <h1
+          class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
+        >
+          ត្រីវិស័យ
+        </h1>
+
+        <p
+          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
+        >
+          App My Destiny - វាសនាខ្ញុំ បានដាក់បញ្ចូលក្បួនដែលអាចគណនា និងវាស់
+          ត្រីវិស័យចំនួន ២ប្រភេទ៖ ទី១ គឺ ត្រីវិស័យសម្រាប់វាស់ និងគណនាទិសឆុង និង
+          ទិសហេង និង ទី២ គឺ ត្រីវិស័យតារាសាស្ត្រ ដើម្បីគណនា
+          និងបង្ហាញអំពីដំណើរគោចររបស់តារាសាស្ត្រ ដែលជះឥទ្ធិពលដល់ជោគជតារាសី
+          របស់មនុស្សជាតិ។
+        </p>
+      </div>
+
+      <NuxtImg
+        src="/images/Scene-2 1.png"
+        class="absolute lg:-bottom-8 md:bottom-[230px] bottom-[300px] lg:left-0 md:left:0 -left-20 w-[496px] h-[591px]"
+      />
+    </div>
+
+    <div class="bg-colors-red-light relative rounded-[30px] py-[10px]">
+      <div
+        class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[400px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
+      >
+        <h1
+          class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
+        >
+          លេខសាស្ត្រ
+        </h1>
+
+        <p
+          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
+        >
+          បងប្អូនអ្នកប្រើប្រាស់ អាចប្រើមុខងារនេះដើម្បីពិនិត្យមើល លេខទូរសព្ទ
+          លេខផ្ទះ លេខយានយន្ត និង លេខគណនីធនាគារ ថាតើលេខនោះ ជាលេខនាំសំណាង ឬ
+          មានឥទ្ធិពលអាក្រក់សម្រាប់ការប្រើប្រាស់។
+        </p>
+      </div>
+
+      <NuxtImg
+        src="/images/Scene-7 1.png"
+        class="absolute lg:-bottom-16 md:bottom-[230px] bottom-[300px] lg:-right-32 md:right:0 -right-20 w-[587px] h-[630px]"
+      />
+    </div>
   </div>
 
   <div
     class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px]"
   >
-    <div
-      class="flex lg:flex-row flex-col items-start gap-32 mt-[246px] lg:pb-0 pb-10"
-    >
+    <div class="flex lg:flex-row flex-col items-center gap-32 py-20">
       <NuxtImg
         src="/images/Mockup-02 1.png"
         width="532"

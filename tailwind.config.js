@@ -29,6 +29,7 @@ export default {
         colors: {
           red: {
             main: '#A1262B',
+            light: '#F3DCC2',
           },
         },
         success: {
@@ -37,6 +38,7 @@ export default {
         },
         info: {
           text: '#FFFFFF',
+          light: '#CFF0FF',
         },
       },
       fontFamily: {
