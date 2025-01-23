@@ -1,45 +1,69 @@
 <template>
-  <footer class="bg-[#f7e6c9] w-full">
-    <div class="container mx-auto py-8">
-      <div class="flex flex-row items-start justify-around">
-        <div class="flex justify-center md:justify-start">
-          <NuxtImg
-            src="/images/footer-image/footer-logo.png"
-            alt="My Destiny Logo"
-            class="h-24 object-contain min-w-[259px] min-h-[227px]"
-          />
+  <footer class="bg-primary-light w-full">
+    <div class="container mx-auto pt-8 lg:px-5">
+      <div
+        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-around justify-center"
+      >
+        <div class="lg:hidden flex flex-row w-full px-5 justify-center gap-3">
+          <a
+            v-for="(name, index) in socialIcons"
+            :key="index"
+            href="#"
+            class="hover:opacity-80 transition-opacity"
+          >
+            <NuxtImg :src="name" :alt="name" class="w-7 h-7" />
+          </a>
         </div>
-        <div class="text-center">
-          <h2 class="text-xl font-semibold mb-4">
-            <div class="mb-1">ក្រុមហ៊ុន ហេង ស៊ុយ សេនធ័រ (ខេមបូឌា) ម.ក</div>
-            <div>Feng Shui Center (Cambodia) Co., Ltd.</div>
-          </h2>
-          <p class="flex items-center justify-center gap-2">
-            #អគារ 743-744 ផ្លូវ 1952 ភូមិចាក់អង្រែ សង្កាត់ទឹកល្អក់១ ខណ្ឌសែនសុខ
-            រាជធានីភ្នំពេញ
-          </p>
-          <p class="flex items-center justify-center gap-2">
-            (+855) 96 82 88 789 | (+855) 92 981 616
-          </p>
-          <p class="flex items-center justify-center gap-2">
-            info@appmydestiny.com
-          </p>
+        <div class="flex flex-row pr-5 gap-5 lg:mt-0 mt-10 align-top">
+          <div class="flex justify-center md:justify-start pl-5 md:pl-0">
+            <NuxtImg
+              src="/images/footer-image/footer-logo.png"
+              alt="My Destiny Logo"
+              class="object-contain md:min-w-[259px] md:min-h-[227px] min-w-[118px] min-h-[104px]"
+            />
+          </div>
+          <div class="text-center md:flex flex-col items-start">
+            <h2 class="text-xl font-semibold mb-4">
+              <p class="text-khmer text-xs md:text-xl bold text-left">
+                ក្រុមហ៊ុន ហ្វេង ស៊ុយ សេនធ័រ (ខេមបូឌា) ឯ.ក Feng Shui Center
+                (Cambodia) Co., Ltd.
+              </p>
+            </h2>
+
+            <p
+              class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-2"
+            >
+              #អគារ 743-744 ផ្លូវ 1952 ភូមិបាយ៉ាប សង្កាត់ភ្នំពេញថ្មី ខណ្ឌសែនសុខ
+              រាជធានីភ្នំពេញ
+            </p>
+
+            <p
+              class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-3"
+            >
+              (+855) 96 82 88 789 | (+855) 92 981 616
+            </p>
+
+            <p class="flex items-center text-khmer text-body md:text-xl mt-3">
+              info@appmydestiny.com
+            </p>
+          </div>
         </div>
         <div class="flex flex-col md:flex-row gap-16 items-start">
-          <nav class="flex flex-col space-y-2">
+          <nav class="hidden lg:flex flex-col space-y-2 text-xs">
             <a
               v-for="item in menuItems"
-              :key="item"
+              :key="item.name"
               href="#"
-              class="hover:text-[#b08d57] transition-colors"
+              class="transition-colors text-xs md:text-base font-khmer font-bold"
             >
-              {{ item }}
+              {{ item.name }}
             </a>
           </nav>
+
           <div
-            class="flex justify-center md:justify-end gap-4 flex-col items-center"
+            class="hidden lg:flex justify-center md:justify-end gap-4 flex-col items-center"
           >
-            <p>FOLLOW US</p>
+            <p class="md:text-base font-khmer font-bold">FOLLOW US</p>
             <div class="grid grid-cols-2 gap-4 justify-items-center">
               <a
                 v-for="(name, index) in socialIcons"
@@ -52,42 +76,34 @@
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="mt-8 pt-4 border-t border-[#b08d57] text-sm text-center md:text-left"
-      >
-        <div
-          class="flex flex-col md:flex-row gap-2 md:gap-4 justify-center items-center"
+        <nav
+          class="lg:hidden flex flex-row items-center justify-around w-full px-5 mt-5"
         >
-          <a href="#" class="hover:underline">Privacy Policy</a>
-          <span class="hidden md:inline">|</span>
-          <a href="#" class="hover:underline">Terms and Conditions</a>
-          <span class="hidden md:inline">|</span>
-          <span>Copyright 2025 Copyright Way Fengshui Group</span>
-        </div>
+          <a
+            v-for="item in menuItemsSmallScreen"
+            :key="item"
+            href="#"
+            class="transition-colors text-xs"
+          >
+            {{ item }}
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div
+      class="flex mt-5 py-4 text-sm text-center md:text-left bg-primary-dark sm:flex-start md:flex-start"
+    >
+      <div class="container mx-auto">
+        <p class="text-khmer md:text-base text-body text-info-text">
+          Privacy Policy |  Terms and Conditions | Copyright 2025 App My Destiny
+        </p>
       </div>
     </div>
   </footer>
 </template>
 
-<script setup>
-const menuItems = [
-  'HOME',
-  'PRODUCT',
-  'PRICE',
-  'EVENT',
-  'ABOUT US',
-  'CONTACT US',
-];
-
-const socialIcons = [
-  '/images/footer-image/tiktok.svg',
-  '/images/footer-image/facebook.svg',
-  '/images/footer-image/instagram.svg',
-  '/images/footer-image/telegram.svg',
-  '/images/footer-image/linkedin.svg',
-  '/images/footer-image/youtube.svg',
-];
+<script setup lang="ts">
+import { Icon } from '@iconify/vue/dist/iconify.js';
 </script>
 
 <style scoped></style>

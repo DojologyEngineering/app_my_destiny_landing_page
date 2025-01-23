@@ -1,66 +1,115 @@
 <template>
   <header
-    class="py-2 min-h-[120px] container mx-auto flex items-center justify-center"
+    class="bg-info-text md:py-4 md:container md:mx-auto rounded-full mx-5"
   >
-    <nav class="relative w-full">
-      <div
-        class="bg-white rounded-full shadow-lg px-8 py-4 flex items-center justify-between relative"
-      >
-        <div class="hidden md:flex items-center justify-between w-full gap-8">
-          <NuxtLink
-            v-for="item in navigationItems"
-            :key="item"
-            :to="item.route"
-            class="text-colors-red-main font-semibold hover:opacity-80 transition-colors"
-          >
-            {{ item.name }}
-          </NuxtLink>
-        </div>
-        <button
-          @click="isMenuOpen = !isMenuOpen"
-          class="md:hidden text-[#8B2635]"
+    <nav class="relative flex items-center justify-between">
+      <div class="hidden space-x-6 lg:flex lg:pl-5">
+        <NuxtLink
+          v-for="item in navigationItemsLeft"
+          :key="item"
+          :to="item.route"
+          class="text-colors-red-main font-bold hover:opacity-80 transition-colors text-[22px]"
         >
-          test
+          {{ item.name }}
+        </NuxtLink>
+      </div>
+
+      <div class="lg:hidden flex pl-5">
+        <button @click="toggleDrawer">
+          <Icon icon="ic:round-menu" width="36" height="24" />
         </button>
+      </div>
+
+      <div
+        class="absolute left-1/2 transform -translate-x-1/2 bg-white rounded-full shadow-lg p-4"
+      >
         <div
-          class="absolute left-1/2 -translate-x-1/2 -top-1 -translate-y-1/4 w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg"
+          class="md:w-28 md:h-28 w-20 h-20 rounded-full overflow-hidden bg-[#FFF3D7]"
         >
-          <div
-            class="w-28 h-28 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#C5A028] flex items-center justify-center"
-          >
-            <NuxtImg src="/images/logo.png" />
-          </div>
+          <NuxtImg
+            src="/images/logo.png"
+            alt="Logo"
+            class="object-cover w-full h-full"
+          />
         </div>
       </div>
-      <div
-        v-if="isMenuOpen"
-        class="absolute top-full left-0 right-0 mt-2 bg-white rounded-lg shadow-lg py-4 px-6 md:hidden z-50"
-      >
+      <div class="hidden space-x-6 lg:pr-5 lg:flex items-center">
         <NuxtLink
-          v-for="item in navigationItems"
+          v-for="item in navigationItemsRight"
           :key="item"
-          :to="item.toLowerCase()"
-          class="block py-2 text-[#8B2635] font-semibold hover:opacity-80 transition-colors"
-          @click="isMenuOpen = false"
+          :to="item.route !== '/video' && item.route"
+          class="text-colors-red-main font-bold hover:opacity-80 transition-colors md:text-[22px]"
         >
-          {{ item }}
+          {{ item.name }}
         </NuxtLink>
+        <LanguageSelector />
+      </div>
+
+      <div class="lg:hidden flex pr-5">
+        <LanguageSelector />
       </div>
     </nav>
   </header>
+  <CusDrawer
+    drawerId="custom-drawer"
+    buttonText="Show Drawer"
+    :isDrawerOpen="isDrawerOpen"
+    @toggleDrawer="toggleDrawer"
+  >
+    <template #title>
+      <span class="flex items-center">My Destiny - វាសនាខ្ញុំ </span>
+    </template>
+    <template #default>
+      <nav class="flex flex-col space-y-4">
+        <NuxtLink
+          v-for="item in menuItems"
+          :key="item"
+          :href="item.route"
+          @click="toggleDrawer"
+          class="text-colors-red-main text-lg font-khmer font-bold"
+        >
+          {{ item.name }}
+        </NuxtLink>
+      </nav>
+    </template>
+  </CusDrawer>
 </template>
 
 <script setup>
+import { Icon } from '@iconify/vue/dist/iconify.js';
 import { ref } from 'vue';
+import CusDrawer from '../cusComponents/CusDrawer.vue';
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
+import LanguageSelector from '../cusComponents/LanguageSelector.vue';
+const { locales, locale, setLocale } = useI18n();
 
-const isMenuOpen = ref(false);
-
-const navigationItems = [
+const isDrawerOpen = ref(false);
+const toggleDrawer = () => {
+  isDrawerOpen.value = !isDrawerOpen.value;
+};
+const selectedLanguageName = computed(() => {
+  const currentLocale = locale.value;
+  return (
+    locales.value.find((item) =>
+      typeof item === 'object'
+        ? item.code === currentLocale
+        : item === currentLocale
+    )?.name || 'English'
+  );
+});
+const language = computed({
+  get: () => locale.value,
+  set: (value) => {
+    setLocale(value);
+  },
+});
+const navigationItemsLeft = [
   { name: 'HOME', route: '/' },
   { name: 'PRODUCT', route: '/product' },
-  { name: 'VIDEO', route: '/video' },
   { name: 'PRICE', route: '/price' },
-  { name: 'ABOUT', route: '/about' },
-  { name: 'CONTACT', route: '/contact' },
+];
+const navigationItemsRight = [
+  { name: 'ABOUT US', route: '/about' },
+  { name: 'CONTACT US', route: '/contact' },
 ];
 </script>

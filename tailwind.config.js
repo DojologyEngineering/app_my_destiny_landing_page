@@ -43,6 +43,7 @@ export default {
         khmer: ['"Noto Sans Khmer"', 'sans-serif'],
       },
       fontSize: {
+        body: '10px',
         xs: '12px',
         sm: '14px',
         base: '16px',
