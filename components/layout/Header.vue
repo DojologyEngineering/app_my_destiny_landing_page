@@ -6,7 +6,6 @@
       <div class="hidden space-x-6 lg:flex lg:pl-5">
         <NuxtLink
           v-for="item in navigationItemsLeft"
-          :key="item"
           :to="item.route"
           class="text-colors-red-main font-bold hover:opacity-80 transition-colors text-[22px]"
         >

@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="fixed top-14 w-full z-10">
+    <div class="fixed top-14 w-full z-50">
       <Header />
     </div>
     <main class="">
