@@ -1,5 +1,5 @@
 <template>
-  <div class="-z-50 h-screen">
+  <div class="">
     <transition name="slide">
       <div
         v-if="isDrawerOpen"

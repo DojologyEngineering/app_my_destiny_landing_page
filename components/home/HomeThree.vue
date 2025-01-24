@@ -1,0 +1,33 @@
+<template>
+  <div class="bg-primary-light">
+    <div class="container mx-auto">
+      <div class="flex justify-center py-14">
+        <p
+          class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main text-center"
+        >
+          មុខងារសំខាន់ៗ App My Destiny - វាសនាខ្ញុំ
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 px-5 md:px-0">
+        <div v-for="item in featurs">
+          <div>
+            <FeatureCom :src="item.image" :des="item.des" :url="item.route" />
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center my-10">
+        <CustomButton url="/contact">
+          <span class="text-info-text">ស្វែងយល់បន្ថែម</span>
+        </CustomButton>
+      </div>
+    </div>
+    <div class="bg-info-text">
+      <PartnersFooter />
+    </div>
+  </div>
+</template>
+<script setup lang="ts">
+import CustomButton from '../cusComponents/CustomButton.vue';
+import PartnersFooter from '../PartnersFooter.vue';
+import FeatureCom from './feature/FeatureCom.vue';
+</script>

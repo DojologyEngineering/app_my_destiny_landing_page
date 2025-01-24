@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-info-text md:py-4 md:container md:mx-auto rounded-full mx-5"
+    class="bg-info-text md:py-4 md:container md:mx-auto rounded-full mx-5 shadow-lg"
   >
     <nav class="relative flex items-center justify-between">
       <div class="hidden space-x-6 lg:flex lg:pl-5">

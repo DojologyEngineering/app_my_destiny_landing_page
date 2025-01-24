@@ -17,9 +17,12 @@ export default {
           main: '#FCEFC7CC',
           light: '#FFF1C9',
           dark: '#CB942B',
+          'orange-light': '#D7AA4E',
           brown: '#B28D43',
           yellow: '#FFF3DD',
           'yellow-dark': '#FFDA74',
+          'orange-dark': '#8C5122',
+          'orange-100': '#EDC125',
         },
         gray: {
           main: '#545454',
