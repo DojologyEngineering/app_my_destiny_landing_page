@@ -1,10 +1,23 @@
 <script setup lang="ts">
 import { NuxtImg } from '#components';
+useSeoMeta({
+  title: 'Product',
+  ogTitle: 'Product',
+  description:
+    'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+  ogDescription:
+    'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+});
 </script>
 
 <template>
   <div class="relative">
-    <NuxtImg src="/images/Opt01_IFSA-Leaflet_A5 1.png" />
+    <NuxtImg src="/images/Opt01_IFSA-Leaflet_A5 1.png" class="hidden md:flex" />
+    <NuxtImg
+      src="/images/Opt01_IFSA-Leaflet_A5 1.png"
+      class="md:hidden flex h-[698px] object-cover w-full"
+    />
+
     <div
       style="
         background: linear-gradient(
@@ -15,12 +28,16 @@ import { NuxtImg } from '#components';
           rgba(255, 255, 255, 0) 100%
         );
       "
-      class="flex flex-col absolute bottom-0 left-[850px]"
+      class="flex flex-col absolute bottom-10 left-1/2 transform -translate-x-1/2 pb-8 w-[70%]"
     >
-      <h1 class="text-center font-bold text-[48px] text-colors-red-main">
+      <h1
+        class="text-center font-bold md:text-[48px] sm:text-[24px] text-[16px] text-colors-red-main"
+      >
         App My Destiny - វាសនាខ្ញុំ
       </h1>
-      <p class="text-center text-gray-main text-[36px] font-[400]">
+      <p
+        class="text-center text-gray-main md:text-[36px] sm:text-[20px] text-[14px] font-[400]"
+      >
         App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ
       </p>
     </div>
@@ -54,14 +71,14 @@ import { NuxtImg } from '#components';
     class="flex flex-col gap-20 py-20 lg:px-[124px] px-4 bg-primary-main overflow-x-hidden"
   >
     <h1
-      class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center lg:mb-0 mb-20"
+      class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center lg:mb-0 xs:mb-20 mb-10"
     >
       មុខងារសំខាន់ៗ
     </h1>
 
     <div class="bg-primary-yellow-dark relative rounded-[30px]">
       <div
-        class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] pt-[400px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
+        class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] xs:pt-[400px] pt-[300px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
       >
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
@@ -81,7 +98,7 @@ import { NuxtImg } from '#components';
 
       <NuxtImg
         src="/images/Scene-8 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] bottom-[300px] lg:left-0 md:left:0 -left-20 w-[496px] h-[591px]"
+        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[420px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px]"
       />
     </div>
 
@@ -89,7 +106,7 @@ import { NuxtImg } from '#components';
 
     <div class="bg-info-text relative rounded-[30px] py-[10px] mt-10">
       <div
-        class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[400px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
+        class="flex flex-col justify-center pb-[100px] lg:pt-[60px] md:pt-[450px] sm:pt-[400px] pt-[260px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
       >
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
@@ -110,13 +127,13 @@ import { NuxtImg } from '#components';
 
       <NuxtImg
         src="/images/Scene-3 1.png"
-        class="absolute lg:-bottom-16 md:bottom-[230px] bottom-[300px] lg:-right-32 md:right:0 -right-20 w-[587px] h-[630px]"
+        class="absolute lg:-bottom-12 md:bottom-[230px] sm:bottom-[300px] bottom-[450px] lg:-right-32 md:right:0 -right-20 sm:w-[587px] sm:h-[630px] w-[387px] h-[387px]"
       />
     </div>
 
     <div class="bg-info-light relative rounded-[30px] mt-10">
       <div
-        class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] pt-[400px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
+        class="flex flex-col justify-center pb-[120px] lg:pt-[100px] md:pt-[450px] sm:pt-[400px] pt-[300px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
       >
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
@@ -137,13 +154,13 @@ import { NuxtImg } from '#components';
 
       <NuxtImg
         src="/images/Scene-2 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] bottom-[300px] lg:left-0 md:left:0 -left-20 w-[496px] h-[600px]"
+        class="absolute lg:-bottom-3 md:bottom-[230px] sm:bottom-[220px] bottom-[450px] lg:left-0 md:left:0 -left-32 sm:w-[496px] sm:h-[600px] w-[400px] h-[400px]"
       />
     </div>
 
     <div class="bg-colors-red-light relative rounded-[30px] py-[10px] mt-10">
       <div
-        class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[400px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
+        class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[230px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
       >
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
@@ -152,7 +169,7 @@ import { NuxtImg } from '#components';
         </h1>
 
         <p
-          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
+          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer max-w-[800px]"
         >
           បងប្អូនអ្នកប្រើប្រាស់ អាចប្រើមុខងារនេះដើម្បីពិនិត្យមើល លេខទូរសព្ទ
           លេខផ្ទះ លេខយានយន្ត និង លេខគណនីធនាគារ ថាតើលេខនោះ ជាលេខនាំសំណាង ឬ
@@ -162,7 +179,7 @@ import { NuxtImg } from '#components';
 
       <NuxtImg
         src="/images/Scene-7 1.png"
-        class="absolute lg:-bottom-24 md:bottom-[230px] bottom-[300px] lg:-right-32 md:right:0 -right-20 w-[587px] h-[630px]"
+        class="absolute left-1/2 top-1/2 lg:translate-x-[9%] md:-translate-x-[70%] -translate-x-[50%] -md:translate-x-[70%] lg:translate-y-[-55%] translate-y-[-98%] md:w-[587px] md:h-[630px] w-[587px] h-[430px] object-cover"
       />
     </div>
   </div>

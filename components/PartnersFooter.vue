@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:px-[225px] px-[100px] py-20 flex flex-col justify-center items-center gap-10 overflow-x-hidden"
+    class="lg:px-[225px] sm:px-[100px] px-[130px] py-20 flex flex-col justify-center items-center gap-10 overflow-x-hidden"
   >
     <h1
       class="font-khmer font-bold md:text-[48px] text-[24px] text-colors-red-main whitespace-nowrap"

@@ -1,3 +1,13 @@
+<script lang="ts" setup>
+useSeoMeta({
+  title: 'About us',
+  ogTitle: 'About us',
+  description:
+    'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+  ogDescription:
+    'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+});
+</script>
 <template>
   <div
     class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[100px] px-[46px] bg-gradient-to-r lg:bg-gradient-to-r lg:from-[#fdcb64] lg:via-[#f0bb50] lg:to-[#e0a837] from-[#F6CA72] via-[#ECC01B] to-[#ECC01B]"

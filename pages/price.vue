@@ -1,4 +1,12 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Price',
+  ogTitle: 'Price',
+  description:
+    'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+  ogDescription:
+    'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+});
 import { NuxtImg } from '#components';
 </script>
 
@@ -10,7 +18,7 @@ import { NuxtImg } from '#components';
     />
   </div>
 
-  <div class="bg-primary-brown h-[1077px] relative lg:flex hidden">
+  <div class="bg-primary-brown h-[1077px] relative xl:flex hidden">
     <div class="absolute bottom-0 left-0 lg:-left-20">
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
@@ -57,19 +65,23 @@ import { NuxtImg } from '#components';
   <!-- other com -->
 
   <div
-    class="bg-primary-brown h-auto lg:hidden flex flex-col justify-center items-center"
+    class="bg-primary-brown h-auto xl:hidden flex flex-col justify-center items-center"
   >
     <div class="flex flex-col">
-      <!-- <p class="text-white text-[48px] font-bold -">តារាងតម្លៃ</p> -->
+      <p
+        class="text-white md:text-[48px] text-[24px] font-bold text-center -mb-52 pt-8"
+      >
+        តារាងតម្លៃ
+      </p>
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
         width="929"
         height="1137"
-        class="hidden sm:flex"
+        class="hidden sm:flex mr-96"
       ></NuxtImg>
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
-        class="relative w-[400px] h-[937px] object-cover left-0 sm:hidden flex"
+        class="relative w-[500px] h-[937px] object-cover -left-4 sm:hidden flex"
       >
       </NuxtImg>
     </div>
