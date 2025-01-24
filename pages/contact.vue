@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div
+    class="bg-primary-orange-light text-center text-[#5a5a5a] pt-20 md:pt-40"
+  >
     <div
-      class="bg-primary-orange-light text-center text-[#5a5a5a] pt-20 md:pt-40"
+      class="bg-cover text-info-text bg-[url(/images/contact/map.png)] pb-10"
     >
-      <div
-        class="bg-cover text-info-text bg-[url(/images/contact/map.png)] pb-10"
-      >
+      <Transition name="fade" appear>
         <div class="pt-20 md:pt-40">
           <p
             class="text-2xl md:text-title font-khmer font-bold text-colors-red-main"
@@ -23,6 +23,8 @@
             Feng Shui Center (Cambodia) Co., Ltd.
           </p>
         </div>
+      </Transition>
+      <Transition name="fade" appear>
         <div
           class="relative z-10 container mx-auto mt-5 md:mt-10 flex justify-center px-5 md:px-0"
         >
@@ -32,8 +34,9 @@
             class="rounded-xl"
           />
         </div>
-      </div>
-
+      </Transition>
+    </div>
+    <Transition name="fade" appear>
       <div
         class="bg-info-text h-auto text-primary-orange-dark py-8 md:py-16 px-5 text-sm leading-relaxed relative -mt-[115px] md:-mt-[230px] z-0"
       >
@@ -48,7 +51,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </Transition>
   </div>
 </template>
 <script setup lang="ts">
