@@ -3,8 +3,27 @@ import { NuxtImg } from '#components';
 </script>
 
 <template>
-  <div class="">
+  <div class="relative">
     <NuxtImg src="/images/Opt01_IFSA-Leaflet_A5 1.png" />
+    <div
+      style="
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          #e6b71f 37.07%,
+          #ecc01b 60.5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      "
+      class="flex flex-col absolute bottom-0 left-[850px]"
+    >
+      <h1 class="text-center font-bold text-[48px] text-colors-red-main">
+        App My Destiny - វាសនាខ្ញុំ
+      </h1>
+      <p class="text-center text-gray-main text-[36px] font-[400]">
+        App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ
+      </p>
+    </div>
   </div>
 
   <div
@@ -68,7 +87,7 @@ import { NuxtImg } from '#components';
 
     <!-- revers -->
 
-    <div class="bg-info-text relative rounded-[30px] py-[10px]">
+    <div class="bg-info-text relative rounded-[30px] py-[10px] mt-10">
       <div
         class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[400px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
       >
@@ -95,7 +114,7 @@ import { NuxtImg } from '#components';
       />
     </div>
 
-    <div class="bg-info-light relative rounded-[30px]">
+    <div class="bg-info-light relative rounded-[30px] mt-10">
       <div
         class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] pt-[400px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
       >
@@ -118,11 +137,11 @@ import { NuxtImg } from '#components';
 
       <NuxtImg
         src="/images/Scene-2 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] bottom-[300px] lg:left-0 md:left:0 -left-20 w-[496px] h-[591px]"
+        class="absolute lg:-bottom-8 md:bottom-[230px] bottom-[300px] lg:left-0 md:left:0 -left-20 w-[496px] h-[600px]"
       />
     </div>
 
-    <div class="bg-colors-red-light relative rounded-[30px] py-[10px]">
+    <div class="bg-colors-red-light relative rounded-[30px] py-[10px] mt-10">
       <div
         class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[400px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
       >
@@ -143,7 +162,7 @@ import { NuxtImg } from '#components';
 
       <NuxtImg
         src="/images/Scene-7 1.png"
-        class="absolute lg:-bottom-16 md:bottom-[230px] bottom-[300px] lg:-right-32 md:right:0 -right-20 w-[587px] h-[630px]"
+        class="absolute lg:-bottom-24 md:bottom-[230px] bottom-[300px] lg:-right-32 md:right:0 -right-20 w-[587px] h-[630px]"
       />
     </div>
   </div>

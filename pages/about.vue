@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px] bg-gradient-to-r lg:bg-gradient-to-r lg:from-[#fdcb64] lg:via-[#f0bb50] lg:to-[#e0a837] from-[#F6CA72] via-[#ECC01B] to-[#ECC01B]"
+    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[100px] px-[46px] bg-gradient-to-r lg:bg-gradient-to-r lg:from-[#fdcb64] lg:via-[#f0bb50] lg:to-[#e0a837] from-[#F6CA72] via-[#ECC01B] to-[#ECC01B]"
   >
     <div
       class="flex lg:flex-row flex-col items-start gap-32 mt-[246px] lg:pb-0 pb-10"

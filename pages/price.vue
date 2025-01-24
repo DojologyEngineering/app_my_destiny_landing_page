@@ -1,53 +1,99 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { NuxtImg } from '#components';
+</script>
 
 <template>
-  <div class="bg-primary-main md:h-screen sm:h-[800px] h-[520px] relative">
+  <div class="bg-primary-main md:h-screen sm:h-[500px] h-[420px] relative">
     <NuxtImg
       src="/images/price_banner.png"
-      class="md:w-[900px] w-[551px] md:h-[500px] h-[520px] absolute left-1/2 bottom-0 transform -translate-x-1/2"
+      class="md:w-[900px] w-[551px] md:h-[560px] sm:h-[360px] absolute left-1/2 bottom-0 transform -translate-x-1/2"
     />
   </div>
 
-  <div class="bg-primary-brown h-auto pt-28">
-    <div class="flex flex-col md:flex-row justify-center items-center">
-      <div class="flex flex-col items-center relative right-10">
-        <NuxtImg
-          src="/images/Phone-Women-Hand-Mockup 1.png"
-          width="829"
-          height="1137"
-          class="relative"
-        />
-        <p
-          class="text-[48px] font-bold font-khmer text-info-text absolute -bottom-[100] -mr-36 mt-8"
-        >
-          តារាងតម្លៃ
-        </p>
-      </div>
-
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-12 pb-48 md:pr-28 md:place-items-start place-items-center"
+  <div class="bg-primary-brown h-[1077px] relative lg:flex hidden">
+    <div class="absolute bottom-0 left-0 lg:-left-20">
+      <NuxtImg
+        src="/images/Phone-Women-Hand-Mockup.png"
+        width="929"
+        height="1137"
+        class=""
       >
+      </NuxtImg>
+      <p class="absolute top-40 left-[400px] text-white text-[48px] font-bold">
+        តារាងតម្លៃ
+      </p>
+    </div>
+    <div
+      class="flex lg:flex-row flex-col items-start gap-32 lg:pb-0 pb-10 absolute top-[120px] right-28"
+    >
+      <div class="grid grid-cols-2 gap-12">
         <div
           v-for="(item, index) in priceList"
           :key="index"
-          class="bg-background-main rounded-[30px] flex flex-col items-center px-10 pt-28 pb-10 relative text-center"
+          class="bg-background-main rounded-[30px] flex flex-col items-center px-10 pt-10 pb-8 text-center max-w-[300px]"
         >
           <h1
-            class="lg:text-[48px] md:text-[32px] text-[16px] font-khmer font-bold text-colors-red-main absolute top-[88px]"
+            class="lg:text-[48px] md:text-[32px] text-[16px] font-khmer font-bold text-colors-red-main mb-2"
           >
             {{ item.title }}
           </h1>
-          <h1 class="lg:text-[128px] md:text-[64px] font-bold">
+          <h1 class="lg:text-[128px] md:text-[64px] font-bold -mt-12">
             <span class="text-[48px]">$</span>{{ item.price }}
           </h1>
-          <p
-            class="font-[400] text-colors-red-main text-[24px] absolute top-[260px] ]"
-          >
+          <p class="font-[400] text-colors-red-main text-[24px] -mt-12">
             {{ item.date }}
           </p>
 
           <button
-            class="px-8 py-4 font-[400] text-info-text bg-colors-red-main rounded-[100px] mt-4"
+            class="px-8 py-4 font-[400] text-info-text bg-colors-red-main rounded-[100px] mt-8"
+          >
+            DOWNLOAD
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- other com -->
+
+  <div
+    class="bg-primary-brown h-auto lg:hidden flex flex-col justify-center items-center"
+  >
+    <div class="flex flex-col">
+      <!-- <p class="text-white text-[48px] font-bold -">តារាងតម្លៃ</p> -->
+      <NuxtImg
+        src="/images/Phone-Women-Hand-Mockup.png"
+        width="929"
+        height="1137"
+        class="hidden sm:flex"
+      ></NuxtImg>
+      <NuxtImg
+        src="/images/Phone-Women-Hand-Mockup.png"
+        class="relative w-[400px] h-[937px] object-cover left-0 sm:hidden flex"
+      >
+      </NuxtImg>
+    </div>
+    <div class="flex flex-col items-start gap-12 lg:pb-0 pb-10">
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-12">
+        <div
+          v-for="(item, index) in priceList"
+          :key="index"
+          class="bg-background-main rounded-[30px] flex flex-col items-center px-10 pt-10 pb-8 text-center max-w-[300px]"
+        >
+          <h1
+            class="lg:text-[48px] text-[32px] font-khmer font-bold text-colors-red-main mb-2"
+          >
+            {{ item.title }}
+          </h1>
+          <h1 class="lg:text-[128px] text-[64px] font-bold">
+            <span class="text-[48px]">$</span>{{ item.price }}
+          </h1>
+          <p class="font-[400] text-colors-red-main text-[24px] -mt-6">
+            {{ item.date }}
+          </p>
+
+          <button
+            class="px-8 py-4 font-[400] text-info-text bg-colors-red-main rounded-[100px] mt-8"
           >
             DOWNLOAD
           </button>
