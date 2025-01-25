@@ -265,7 +265,7 @@ useSeoMeta({
   </div>
 
   <div
-    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px]"
+    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px] overflow-x-hidden"
   >
     <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg

@@ -9,7 +9,9 @@ useSeoMeta({
 });
 </script>
 <template>
-  <div class="bg-gradient-to-r from-[#fdcb64] via-[#f0bb50] to-[#e0a837]">
+  <div
+    class="bg-gradient-to-r from-[#fdcb64] via-[#f0bb50] to-[#e0a837] overflow-x-hidden"
+  >
     <div class="container mx-auto">
       <div
         class="flex flex-col md:flex-row items-start md:pt-[246px] pt-[170px]"
@@ -33,6 +35,7 @@ useSeoMeta({
           <NuxtImg
             src="/images/home-image/MasterNaly.png"
             class="w-full h-auto"
+            :placeholder="[50, 25]"
           />
           <div
             class="absolute bottom-0 left-0 right-0 h-40 md:hidden block"
@@ -56,7 +59,7 @@ useSeoMeta({
           class="md:bg-none w-full md:ml-0 ml-0 flex flex-col items-start justify-start text-start px-5 md:px-0 bg-gradient-to-b from-primary-orange-100 to-primary-dark pb-10 mt-6 gap-8"
         >
           <h1
-            class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer"
+            class="lg:text-[42px] text-[24px] font-bold text-colors-red-main font-khmer"
           >
             អំពី App My Destiny - វាសនាខ្ញុំ
           </h1>
