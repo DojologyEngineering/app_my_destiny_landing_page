@@ -64,13 +64,41 @@ useSeoMeta({
       ទៅលើជោគជាតារាសីប្រចាំថ្ងៃរបស់មនុស្សជាតិ។
     </p>
 
-    <NuxtImg src="/images/19 1.png" />
+    <NuxtImg
+      src="/images/19 1.png"
+      v-motion
+      :initial="{
+        y: 200,
+      }"
+      :visible-once="{
+        y: 0,
+        opacity: 1,
+        transition: {
+          delay: 100,
+          duration: 500,
+          easing: 'easeInOut',
+        },
+      }"
+    />
   </div>
 
   <div
     class="flex flex-col gap-20 md:py-20 py-4 lg:px-[124px] px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
   >
     <h1
+      v-motion
+      :initial="{
+        y: 200,
+      }"
+      :visible-once="{
+        y: 0,
+        opacity: 1,
+        transition: {
+          delay: 100,
+          duration: 500,
+          easing: 'easeInOut',
+        },
+      }"
       class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center lg:mb-0 xs:mb-20 mb-1"
     >
       មុខងារសំខាន់ៗ
@@ -78,6 +106,19 @@ useSeoMeta({
 
     <div class="bg-primary-yellow-dark relative rounded-[30px]">
       <div
+        v-motion
+        :initial="{
+          x: 200,
+        }"
+        :visible-once="{
+          x: 0,
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 500,
+            easing: 'easeInOut',
+          },
+        }"
         class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] xs:pt-[400px] pt-[300px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
       >
         <h1
@@ -106,6 +147,19 @@ useSeoMeta({
 
     <div class="bg-info-text relative rounded-[30px] py-[10px] mt-10">
       <div
+        v-motion
+        :initial="{
+          x: 200,
+        }"
+        :visible-once="{
+          x: 0,
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 500,
+            easing: 'easeInOut',
+          },
+        }"
         class="flex flex-col justify-center pb-[100px] lg:pt-[60px] md:pt-[450px] sm:pt-[400px] pt-[260px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
       >
         <h1
@@ -133,6 +187,19 @@ useSeoMeta({
 
     <div class="bg-info-light relative rounded-[30px] mt-10">
       <div
+        v-motion
+        :initial="{
+          x: 200,
+        }"
+        :visible-once="{
+          x: 0,
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 500,
+            easing: 'easeInOut',
+          },
+        }"
         class="flex flex-col justify-center pb-[120px] lg:pt-[100px] md:pt-[450px] sm:pt-[400px] pt-[300px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
       >
         <h1
@@ -160,6 +227,19 @@ useSeoMeta({
 
     <div class="bg-colors-red-light relative rounded-[30px] py-[10px] mt-10">
       <div
+        v-motion
+        :initial="{
+          x: 200,
+        }"
+        :visible-once="{
+          x: 0,
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 500,
+            easing: 'easeInOut',
+          },
+        }"
         class="flex flex-col justify-center pb-[100px] lg:pt-[100px] md:pt-[450px] pt-[230px] lg:pr-[500px] lg:pl-[170px] pr-10 pl-10 gap-4"
       >
         <h1
@@ -189,13 +269,41 @@ useSeoMeta({
   >
     <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg
+        v-motion
+        :initial="{
+          y: 200,
+        }"
+        :visible-once="{
+          y: 0,
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 500,
+            easing: 'easeInOut',
+          },
+        }"
         src="/images/Mockup-02 1.png"
         width="532"
         height="766"
         class=""
       />
 
-      <div class="flex flex-col gap-10">
+      <div
+        class="flex flex-col gap-10"
+        v-motion
+        :initial="{
+          x: 200,
+        }"
+        :visible-once="{
+          x: 0,
+          opacity: 1,
+          transition: {
+            delay: 100,
+            duration: 500,
+            easing: 'easeInOut',
+          },
+        }"
+      >
         <h1
           class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer"
         >

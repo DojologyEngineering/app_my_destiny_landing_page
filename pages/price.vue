@@ -19,7 +19,22 @@ import { NuxtImg } from '#components';
   </div>
 
   <div class="bg-primary-brown h-[1077px] relative xl:flex hidden">
-    <div class="absolute bottom-0 left-0 lg:-left-20">
+    <div
+      class="absolute bottom-0 left-0 lg:-left-20"
+      v-motion
+      :initial="{
+        y: 200,
+      }"
+      :visible-once="{
+        y: 0,
+        opacity: 1,
+        transition: {
+          delay: 100,
+          duration: 500,
+          easing: 'easeInOut',
+        },
+      }"
+    >
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
         width="929"
@@ -36,6 +51,19 @@ import { NuxtImg } from '#components';
     >
       <div class="grid grid-cols-2 gap-12">
         <div
+          v-motion
+          :initial="{
+            y: 200,
+          }"
+          :visible-once="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 100 * index * 2,
+              duration: 500,
+              easing: 'easeInOut',
+            },
+          }"
           v-for="(item, index) in priceList"
           :key="index"
           class="bg-background-main rounded-[30px] flex flex-col items-center px-10 pt-10 pb-8 text-center max-w-[300px]"

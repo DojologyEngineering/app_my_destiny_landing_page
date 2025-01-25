@@ -1,5 +1,21 @@
 <template>
   <div
+    v-motion
+    :initial="{
+      x: 0,
+      opacity: 0.5,
+    }"
+    :visible-once="{
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 250,
+        damping: 25,
+        mass: 0.5,
+        delay: 100,
+      },
+    }"
     class="lg:px-[225px] sm:px-[100px] px-[130px] py-20 flex flex-col justify-center items-center gap-10 overflow-x-hidden"
   >
     <h1
