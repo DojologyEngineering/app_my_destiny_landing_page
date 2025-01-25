@@ -1,7 +1,11 @@
 {
-  "home": "Home",
-  "one_solution": "One Solution",
-  "service": "Service",
-  "work": "Work",
-  "industry": "Industry"
+  "HOME": "HOME",
+  "PRODUCT": "PRODUCT",
+  "PRICE": "PRICE",
+  "ABOUT US": "ABOUT US",
+  "CONTACT US": "CONTACT US",
+  "FOLLO US": "FOLLO US",
+  "Privacy Policy": "Privacy Policy",
+  "Terms and Conditions": "Terms and Conditions",
+  "Copyright 2025 Copyright App My Destiny": "Copyright 2025 Copyright App My Destiny"
 }

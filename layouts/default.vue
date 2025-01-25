@@ -1,18 +1,14 @@
 <template>
   <div class="">
     <div class="fixed top-14 w-full z-50">
-      <Transition name="fade" appear>
-        <Header />
-      </Transition>
+      <Header />
     </div>
     <main class="">
       <slot />
     </main>
 
     <div class="z-10">
-      <Transition name="fade" appear>
-        <Footer />
-      </Transition>
+      <Footer />
     </div>
   </div>
 </template>
