@@ -28,15 +28,15 @@ useSeoMeta({
           rgba(255, 255, 255, 0) 100%
         );
       "
-      class="flex flex-col absolute bottom-10 left-1/2 transform -translate-x-1/2 pb-8 w-[70%]"
+      class="flex flex-col absolute md:bottom-10 bottom-0 left-1/2 transform -translate-x-1/2 pb-8 w-[100%] md:w-[70%] md:py-4 py-4"
     >
       <h1
-        class="text-center font-bold md:text-[48px] sm:text-[24px] text-[16px] text-colors-red-main"
+        class="text-center font-bold md:text-[48px] text-[24px] text-colors-red-main"
       >
         App My Destiny - វាសនាខ្ញុំ
       </h1>
       <p
-        class="text-center text-gray-main md:text-[36px] sm:text-[20px] text-[14px] font-[400]"
+        class="text-center text-gray-main md:text-[36px] text-[20px] font-[400]"
       >
         App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ
       </p>
@@ -68,10 +68,10 @@ useSeoMeta({
   </div>
 
   <div
-    class="flex flex-col gap-20 py-20 lg:px-[124px] px-4 bg-primary-main overflow-x-hidden"
+    class="flex flex-col gap-20 md:py-20 py-4 lg:px-[124px] px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
   >
     <h1
-      class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center lg:mb-0 xs:mb-20 mb-10"
+      class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center lg:mb-0 xs:mb-20 mb-1"
     >
       មុខងារសំខាន់ៗ
     </h1>
@@ -98,7 +98,7 @@ useSeoMeta({
 
       <NuxtImg
         src="/images/Scene-8 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[420px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px]"
+        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[400px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
       />
     </div>
 
@@ -127,7 +127,7 @@ useSeoMeta({
 
       <NuxtImg
         src="/images/Scene-3 1.png"
-        class="absolute lg:-bottom-12 md:bottom-[230px] sm:bottom-[300px] bottom-[450px] lg:-right-32 md:right:0 -right-20 sm:w-[587px] sm:h-[630px] w-[387px] h-[387px]"
+        class="absolute left-1/2 top-1/2 lg:translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] -translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:-translate-y-[88%] -translate-y-[120%] sm:w-[587px] sm:h-[630px] w-[387px] h-[387px] object-cover"
       />
     </div>
 
@@ -154,7 +154,7 @@ useSeoMeta({
 
       <NuxtImg
         src="/images/Scene-2 1.png"
-        class="absolute lg:-bottom-3 md:bottom-[230px] sm:bottom-[220px] bottom-[450px] lg:left-0 md:left:0 -left-32 sm:w-[496px] sm:h-[600px] w-[400px] h-[400px]"
+        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[120%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
     </div>
 
@@ -187,7 +187,7 @@ useSeoMeta({
   <div
     class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px]"
   >
-    <div class="flex lg:flex-row flex-col items-center gap-32 py-20">
+    <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg
         src="/images/Mockup-02 1.png"
         width="532"
