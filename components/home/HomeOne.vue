@@ -4,16 +4,15 @@
       <div class="flex md:flex-row flex-col-reverse items-center px-5 md:px-0">
         <!-- Text Content -->
         <div class="flex flex-col items-start mt-20 md:mt-0">
-          <Transition name="fade" appear>
-            <div class="px-0 md:px-5">
-              <p
-                class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
-              >
-                App My Destiny - វាសនាខ្ញុំ
-              </p>
-            </div></Transition
-          >
-          <div class="mt-4 md:px-5 px-0">
+          <div class="px-0 md:px-0">
+            <p
+              class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
+            >
+              App My Destiny - វាសនាខ្ញុំ
+            </p>
+          </div>
+
+          <div class="mt-4 md:px-0 px-0">
             <p
               class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
             >

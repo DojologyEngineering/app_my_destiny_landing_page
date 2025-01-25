@@ -66,11 +66,10 @@
 
       <div class="w-[10%] flex justify-center">
         <div
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full shadow-lg p-4"
+          class="hover:cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-info-text rounded-full shadow-lg p-4"
+          @click="handleNavigate"
         >
-          <div
-            class="md:w-28 md:h-28 w-20 h-20 rounded-full overflow-hidden bg-[#FFF3D7]"
-          >
+          <div class="md:w-28 md:h-28 w-20 h-20 rounded-full overflow-hidden">
             <NuxtImg
               src="/images/logo.png"
               alt="Logo"
@@ -124,30 +123,15 @@
 import { Icon } from '@iconify/vue/dist/iconify.js';
 import { ref } from 'vue';
 import CusDrawer from '../cusComponents/CusDrawer.vue';
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
 import LanguageSelector from '../cusComponents/LanguageSelector.vue';
-const { locales, locale, setLocale } = useI18n();
-
+const navigate = useRouter();
+const handleNavigate = () => {
+  navigate.push('/');
+};
 const isDrawerOpen = ref(false);
 const toggleDrawer = () => {
   isDrawerOpen.value = !isDrawerOpen.value;
 };
-const selectedLanguageName = computed(() => {
-  const currentLocale = locale.value;
-  return (
-    locales.value.find((item) =>
-      typeof item === 'object'
-        ? item.code === currentLocale
-        : item === currentLocale
-    )?.name || 'English'
-  );
-});
-const language = computed({
-  get: () => locale.value,
-  set: (value) => {
-    setLocale(value);
-  },
-});
 const navigationItemsLeft = [
   { name: 'HOME', route: '/' },
   { name: 'PRODUCT', route: '/product' },
