@@ -4,13 +4,15 @@
       <div class="flex md:flex-row flex-col-reverse items-center px-5 md:px-0">
         <!-- Text Content -->
         <div class="flex flex-col items-start mt-20 md:mt-0">
-          <div class="px-0 md:px-5">
-            <p
-              class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
-            >
-              App My Destiny - វាសនាខ្ញុំ
-            </p>
-          </div>
+          <Transition name="fade" appear>
+            <div class="px-0 md:px-5">
+              <p
+                class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
+              >
+                App My Destiny - វាសនាខ្ញុំ
+              </p>
+            </div></Transition
+          >
           <div class="mt-4 md:px-5 px-0">
             <p
               class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
@@ -40,8 +42,9 @@
             src="/images/home-image/mobile-background.svg"
             alt="Background"
           />
+
           <NuxtImg
-            class="absolute top-0 left-0 w-full h-auto md:w-[555px] md:h-[695px] object-contain z-20"
+            class="absolute inset-0 mx-auto w-auto h-full object-contain z-10"
             src="/images/home-image/mobile.png"
             alt="Mobile"
           />
@@ -51,3 +54,14 @@
   </div>
 </template>
 <script setup lang="ts"></script>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

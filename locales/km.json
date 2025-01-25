@@ -1,7 +1,11 @@
 {
-  "home": "ទំព័រដើម",
-  "one_solution": "ដំណោះស្រាយ",
-  "service": "សេវាកម្ម",
-  "work": "កិច្ចការ",
-  "industry": "អាជីវកម្ម"
+  "HOME": "ទំព័រដើម",
+  "PRODUCT": "ផលិតផល",
+  "PRICE": "តម្លៃ",
+  "ABOUT US": "អំពីយើង",
+  "CONTACT US": "ទំនាក់ទំនង",
+  "FOLLO US": "តាមដានយើង",
+  "Privacy Policy": "គោលការណ៍",
+  "Terms and Conditions": "ស្ថានភាព និងការប្រើប្រាស់",
+  "Copyright 2025 Copyright App My Destiny": ""
 }
