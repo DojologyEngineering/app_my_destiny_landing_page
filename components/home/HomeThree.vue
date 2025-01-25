@@ -10,7 +10,21 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 px-5 md:px-0">
         <div v-for="item in featurs">
-          <div>
+          <div
+            v-motion
+            :initial="{
+              y: 200,
+            }"
+            :visible-once="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 100,
+                duration: 400,
+                easing: 'easeInOut',
+              },
+            }"
+          >
             <FeatureCom :src="item.image" :des="item.des" :url="item.route" />
           </div>
         </div>

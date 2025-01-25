@@ -57,7 +57,7 @@
       <div class="w-[45%] hidden lg:flex flex-row justify-around items-center">
         <NuxtLink
           v-for="item in navigationItemsLeft"
-          :to="item.route"
+          :to="localePath(item.route)"
           class="text-colors-red-main font-bold hover:opacity-80 transition-colors text-[22px]"
         >
           {{ $t(item.name) }}
@@ -82,7 +82,7 @@
         <NuxtLink
           v-for="item in navigationItemsRight"
           :key="item"
-          :to="item.route !== '/video' && item.route"
+          :to="localePath(item.route)"
           class="text-colors-red-main font-bold hover:opacity-80 transition-colors md:text-[22px]"
         >
           {{ $t(item.name) }}
@@ -108,7 +108,7 @@
         <NuxtLink
           v-for="item in menuItems"
           :key="item"
-          :href="item.route"
+          :to="localePath(item.route)"
           @click="toggleDrawer"
           class="text-colors-red-main text-lg font-khmer font-bold"
         >
@@ -128,6 +128,7 @@ const navigate = useRouter();
 const handleNavigate = () => {
   navigate.push('/');
 };
+const localePath = useLocalePath();
 const isDrawerOpen = ref(false);
 const toggleDrawer = () => {
   isDrawerOpen.value = !isDrawerOpen.value;
