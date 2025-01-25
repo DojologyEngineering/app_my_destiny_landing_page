@@ -7,14 +7,16 @@
           <div class="px-0 md:px-0">
             <p
               class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
+              v-motion-fade
             >
               App My Destiny - វាសនាខ្ញុំ
             </p>
           </div>
 
-          <div class="mt-4 md:px-0 px-0">
+          <div class="md:mt-8 mt-5 md:px-0 px-0 max-w-[600px]">
             <p
               class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
+              v-motion-fade
             >
               ជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រតែមួយគត់
               <span
@@ -27,6 +29,7 @@
           </div>
           <div
             class="mt-6 md:max-w-[422px] md:max-h-[144px] max-w-[349px] max-h-[50px]"
+            v-motion-fade
           >
             <NuxtImg
               src="/images/home-image/qr.png"
@@ -35,7 +38,7 @@
             />
           </div>
         </div>
-        <div class="relative w-full max-w-[664px]">
+        <div class="relative w-full max-w-[664px]" v-motion-fade>
           <NuxtImg
             class="w-full h-auto object-cover"
             src="/images/home-image/mobile-background.svg"
@@ -53,14 +56,3 @@
   </div>
 </template>
 <script setup lang="ts"></script>
-
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>
