@@ -1,7 +1,9 @@
 <template>
   <div class="bg-primary-light pt-36 pb-28">
     <div class="container mx-auto">
-      <div class="flex md:flex-row flex-col-reverse items-center px-5 md:px-0">
+      <div
+        class="flex md:flex-row flex-col-reverse items-center px-5 md:px-0 justify-between"
+      >
         <!-- Text Content -->
         <div class="flex flex-col items-start mt-20 md:mt-0">
           <div class="px-0 md:px-0">
@@ -17,6 +19,7 @@
             <p
               class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
               v-motion-fade
+              v-if="locale == 'km'"
             >
               ជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រតែមួយគត់
               <span
@@ -25,6 +28,16 @@
               >
               បង្កើតឡើងដោយជនជាតិខ្មែរ ប្រកបដោយស្តង់ដារល្អបំផុត កម្រិតអន្តរជាតិ
               ដែលមានចំនួនអ្នកដោនឡូត ច្រើនជាង 600,000 (ប្រាំមួយរយពាន់) នាក់។
+            </p>
+            <p
+              v-else
+              class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
+            >
+              {{
+                $t(
+                  'With more than 600,000 downloads as of now, App My Destiny- វាសនាខ្ញុំ, the Strategic and Scientific Feng Shui mobile application is available for users of both Android and iOS devices.'
+                )
+              }}
             </p>
           </div>
           <div
@@ -55,4 +68,6 @@
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { locale } = useI18n();
+</script>

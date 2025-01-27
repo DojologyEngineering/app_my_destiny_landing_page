@@ -89,7 +89,7 @@
         </NuxtLink>
         <LanguageSelector />
       </div>
-      <div class="lg:hidden flex justify-end w-[45%] pr-5">
+      <div class="lg:hidden flex justify-end w-[45%] pr-3">
         <LanguageSelector />
       </div>
     </div>

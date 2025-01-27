@@ -7,11 +7,13 @@
         <NuxtImg :src="src" class="w-full h-full" />
       </div>
       <div class="mt-3">
-        <p class="text-2xl font-khmer font-bold text-gray-main">{{ name }}</p>
+        <p class="text-2xl font-khmer font-bold text-gray-main">
+          {{ $t(name || '') }}
+        </p>
       </div>
     </div>
     <div>
-      <p class="text-gray-dark text-2xl/10">{{ des }}</p>
+      <p class="text-gray-dark text-2xl/10">{{ $t(des || '') }}</p>
     </div>
   </div>
 </template>

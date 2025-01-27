@@ -18,30 +18,40 @@
           <p
             class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main pb-8"
           >
-            App My Destiny - វាសនាខ្ញុំ
+            {{ $t('About App My Destiny - វាសនាខ្ញុំ') }}
           </p>
-          <p class="font-khmer text-xl md:text-2xl/10 text-gray-main">
-            រូបមន្តហុងស៊ុយសំខាន់ៗមានការទទួលស្គាល់ជាអន្តរជាតិ បានរៀបចំចងក្រង
-            យ៉ាងល្អិតល្អន់ ហ្មត់ចត់ និងផ្ចិតផ្ទង់ ដោយ
-            <span class="font-khmer text-xl md:text-2xl/10 font-bold"
-              >ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span
-            >
-            ដើម្បីយកមកអភិវឌ្ឍឲ្យក្លាយ ទៅជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ។ 
+          <div v-if="locale == 'km'">
+            <p class="font-khmer text-xl md:text-2xl/10 text-gray-main">
+              រូបមន្តហុងស៊ុយសំខាន់ៗមានការទទួលស្គាល់ជាអន្តរជាតិ បានរៀបចំចងក្រង
+              យ៉ាងល្អិតល្អន់ ហ្មត់ចត់ និងផ្ចិតផ្ទង់ ដោយ
+              <span class="font-khmer text-xl md:text-2xl/10 font-bold"
+                >ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span
+              >
+              ដើម្បីយកមកអភិវឌ្ឍឲ្យក្លាយ ទៅជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ។ 
+            </p>
+
+            <p class="font-khmer text-xl md:text-2xl/10 text-gray-main mt-10">
+              <span class="font-khmer text-xl md:text-2xl/10 font-bold"
+                >ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span
+              >
+              បានបញ្ចប់ការសិក្សាផ្នែកវិជ្ជាហុងស៊ុយ
+              ពីគ្រូចិនសែល្បីៗនៅលើពិភពលោកជាច្រើនរូបរួមមាន៖....
+            </p>
+          </div>
+
+          <p class="font-khmer text-xl md:text-2xl/10 text-gray-main" v-else>
+            {{
+              $t(
+                'The most substantial outcome of Oknha Master Naly Long’s resolute and tenacious commitment, along with her striving, responsibility, morality, and professionalism, is her well-organized plan for discovering, gathering, and compiling practical Strategic and Scientific Feng Shui formulas corresponding with accuracy, precision,'
+              )
+            }}
           </p>
         </div>
-        <div class="mt-10">
-          <p class="font-khmer text-xl md:text-2xl/10 text-gray-main">
-            <span class="font-khmer text-xl md:text-2xl/10 font-bold"
-              >ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span
-            >
-            បានបញ្ចប់ការសិក្សាផ្នែកវិជ្ជាហុងស៊ុយ
-            ពីគ្រូចិនសែល្បីៗនៅលើពិភពលោកជាច្រើនរូបរួមមាន៖....
-          </p>
-          <div class="flex justify-center mt-10 mb-pb-0 pb-12">
-            <CustomButton url="/contact">
-              <span class="text-info-text">ស្វែងយល់បន្ថែម</span>
-            </CustomButton>
-          </div>
+
+        <div class="flex justify-center mt-10 mb-pb-0 pb-12">
+          <CustomButton url="/contact">
+            <span class="text-info-text">{{ $t('Learn More') }}</span>
+          </CustomButton>
         </div>
       </div>
     </div>
@@ -49,4 +59,5 @@
 </template>
 <script setup lang="ts">
 import CustomButton from '../cusComponents/CustomButton.vue';
+const { locale } = useI18n();
 </script>

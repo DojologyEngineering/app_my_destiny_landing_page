@@ -7,21 +7,33 @@
         <p
           class="text-2xl md:text-5xl font-bold font-khmer text-colors-red-main mb-4"
         >
-          ក្រុមហ៊ុនសហការជា
+          {{ $t('Partnership') }}
         </p>
 
-        <p class="md:text-2xl/10 text-xl/10 font-khmer text-info-text mt-10">
-          App My Destiny- វាសនាខ្ញុំ កម្មវិធីទូរស័ព្ទសម័យឌីជីថល
-          និងបច្ចេកវិទ្យាខ្ពស់!
-        </p>
-        <p class="md:text-2xl/10 text-xl/10 font-khmer text-info-text">
-          យើងបានសហការ យ៉ាងជិតស្និទ្ធជាមួយនឹងដៃគូអាជីវកម្មរបស់យើង
-          ទាំងប្រព័ន្ធប្រតិបត្តិករធនាគារ និងប្រព័ន្ធប្រតិបត្តិករទូរស័ព្ទ
-        </p>
-        <p class="md:text-2xl/10 text-xl/10 font-khmer text-info-text">
-          ជាមួយនឹងការប្រើប្រាស់បច្ចេកវិទ្យាទំនើប
-          និងសុវត្ថិភាពបំផុតសម្រាប់ទូទាត់សាច់ប្រាក់ តាមរយៈប្រព័ន្ធអេឡិចត្រូនិក។
-        </p>
+        <div v-if="locale == 'km'">
+          <p class="md:text-2xl/10 text-xl/10 font-khmer text-info-text mt-10">
+            App My Destiny- វាសនាខ្ញុំ កម្មវិធីទូរស័ព្ទសម័យឌីជីថល
+            និងបច្ចេកវិទ្យាខ្ពស់!
+          </p>
+          <p class="md:text-2xl/10 text-xl/10 font-khmer text-info-text">
+            យើងបានសហការ យ៉ាងជិតស្និទ្ធជាមួយនឹងដៃគូអាជីវកម្មរបស់យើង
+            ទាំងប្រព័ន្ធប្រតិបត្តិករធនាគារ និងប្រព័ន្ធប្រតិបត្តិករទូរស័ព្ទ
+          </p>
+          <p class="md:text-2xl/10 text-xl/10 font-khmer text-info-text">
+            ជាមួយនឹងការប្រើប្រាស់បច្ចេកវិទ្យាទំនើប
+            និងសុវត្ថិភាពបំផុតសម្រាប់ទូទាត់សាច់ប្រាក់
+            តាមរយៈប្រព័ន្ធអេឡិចត្រូនិក។
+          </p>
+        </div>
+        <div v-else>
+          <p class="md:text-2xl/10 text-xl/7 font-khmer text-gray-main">
+            {{
+              $t(
+                'App My Destiny- វាសនាខ្ញុំ - a cutting-edge Strategic and Scientific Feng Shui mobile application. We work closely and extensively with all of our business partners, ranging from the banking system to the telecommunications company, paving the way for us to capitalize on the most advanced digital technology and secure electronic payment methods.'
+              )
+            }}
+          </p>
+        </div>
       </div>
 
       <!-- Logo Section -->
@@ -53,3 +65,6 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+const { locale } = useI18n();
+</script>
