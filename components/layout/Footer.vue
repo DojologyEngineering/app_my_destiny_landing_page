@@ -41,22 +41,42 @@
             <p
               class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-2"
             >
+              <Icon
+                icon="lucide:map-pin"
+                style="color: #000"
+                class="mr-2 w-8 h-8 md:w-6 md:h-6"
+              />
+
               {{ $t('Building 743, 744 Street 1952, Phnom Penh 120801') }}
             </p>
 
             <p
               class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-3"
             >
+              <Icon
+                icon="akar-icons:phone"
+                width="24"
+                height="24"
+                style="color: #000"
+                class="mr-2"
+              />
               (+855) 96 82 88 789 | (+855) 92 981 616
             </p>
 
             <p class="flex items-center text-khmer text-body md:text-xl mt-3">
+              <Icon
+                icon="eva:email-outline"
+                width="24"
+                height="24"
+                style="color: #000"
+                class="mr-2"
+              />
               info@appmydestiny.com
             </p>
           </div>
         </div>
         <div class="flex flex-col md:flex-row gap-16 items-start">
-          <nav class="hidden lg:flex flex-col space-y-2 text-xs">
+          <nav class="hidden lg:flex flex-col space-y-4 text-xs">
             <a
               v-for="item in menuItems"
               :key="item.name"
@@ -111,6 +131,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue/dist/iconify.js';
+
 const { locale } = useI18n();
 </script>
 
