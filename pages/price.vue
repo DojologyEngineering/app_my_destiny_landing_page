@@ -43,7 +43,7 @@ import { NuxtImg } from '#components';
       >
       </NuxtImg>
       <p class="absolute top-40 left-[400px] text-white text-[48px] font-bold">
-        តារាងតម្លៃ
+        {{ $t('Price List') }}
       </p>
     </div>
     <div
@@ -71,13 +71,13 @@ import { NuxtImg } from '#components';
           <h1
             class="lg:text-[48px] md:text-[32px] text-[16px] font-khmer font-bold text-colors-red-main mb-2"
           >
-            {{ item.title }}
+            {{ $t(item.title) }}
           </h1>
           <h1 class="lg:text-[128px] md:text-[64px] font-bold -mt-12">
             <span class="text-[48px]">$</span>{{ item.price }}
           </h1>
           <p class="font-[400] text-colors-red-main text-[24px] -mt-12">
-            {{ item.date }}
+            {{ $t(item.date) }}
           </p>
 
           <button

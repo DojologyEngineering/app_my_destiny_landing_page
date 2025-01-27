@@ -38,7 +38,7 @@ useSeoMeta({
       <p
         class="text-center text-gray-main md:text-[36px] text-[20px] font-[400]"
       >
-        App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ
+        {{ $t('Scientific Feng Shui App') }}
       </p>
     </div>
   </div>
@@ -54,14 +54,14 @@ useSeoMeta({
     <p
       class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer text-center lg:px-[190px] px:[46px]"
     >
-      <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]"
-        >ជាអេបហុងស៊ុយបែបវិទ្យាសាស្ត្រ </span
-      >គណនាតាមក្បួនប៉ាជឺ អាចតាមដានរាសីប្រចាំថ្ងៃ ហើយតាមរយៈក្បួន
-      លេខសាស្ត្រក៏អាចឲ្យយើងបានដឹងពី លេខទូរស័ព្ទ លេខផ្ទះ លេខយានជំនិះ
-      និងលេខគណនីធនាគារថាតើល្អ ឬមិនល្អ សម្រាប់ប្រើប្រាស់ និងចំណែកឯ ត្រីវិស័យ
-      បានដាក់បញ្ចូលក្បួនត្រីវិស័យសម្រាប់វាស់ និងគណនា ទិសឆុង ទិសហេង
-      ហើយក៏មានត្រីវិស័យតារាសាស្ត្រផងដែរ ដែលមានឥទ្ធិពល
-      ទៅលើជោគជាតារាសីប្រចាំថ្ងៃរបស់មនុស្សជាតិ។
+      <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">{{
+        $t('App My Destiny - វាសនាខ')
+      }}</span
+      >{{
+        $t(
+          'includes Bazi’s function enabling us to keep track of our daily zodiac, and it comprises a number horoscope that permits us to figure out whether or not our phone number, house number, vehicle plate number, and bank account number are good; and the Chinese compass (Luo Pan) allows us to calculate the positive and negative energies from each direction so that we can take preventative actions.'
+        )
+      }}
     </p>
 
     <NuxtImg
@@ -101,7 +101,7 @@ useSeoMeta({
       }"
       class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center lg:mb-0 xs:mb-20 mb-1"
     >
-      មុខងារសំខាន់ៗ
+      {{ $t('App Features') }}
     </h1>
 
     <div class="bg-primary-yellow-dark relative rounded-[30px]">
@@ -124,16 +124,17 @@ useSeoMeta({
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
         >
-          ព័ត៌មានបឋម
+          {{ $t('Basic Info') }}
         </h1>
 
         <p
           class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
         >
-          អនុញ្ញាតឲ្យបងប្អូនអ្នកប្រើប្រាស់បានដឹង ពីតួរាសីផ្ទាល់ខ្លួន ដឹងពី
-          ប្រភេទរាសី ថាតើជាប្រភេទរាសីរឹងមាំង ខ្សោយ​ ឬជារាសីករណីពិសេស 
-          ដឹងអំពីពណ៌សំណាង និងប្រភេទអាជីកម្មសមប្រកប តាមធាតុត្រូវការ នីមួយៗ
-          ហើយក៏មានព័ត៌មាន សំខាន់ៗផ្សេងៗទៀតផងដែរ។
+          {{
+            $t(
+              'It enables the users to access useful and informative data such as whether or not the day master of one’s Bazi is strong, which category the four pillars will fall under, favorable colors, advantageous careers, and other significant details. '
+            )
+          }}
         </p>
       </div>
 
@@ -165,17 +166,17 @@ useSeoMeta({
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
         >
-          ក្បួនប៉ាជឺ
+          {{ $t('Bazi') }}
         </h1>
 
         <p
           class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
         >
-          អនុញ្ញាតឲ្យបងប្អូនអ្នកប្រើប្រាស់ អាចគណនាតាមរយៈតារាងប៉ាជឺ នូវតួរាសី
-          ទាំង៨ ដែលរួមមានរាសីខាងលើ និងរាសីខាងក្រោម ដោយគ្រាន់តែបញ្ចូល ម៉ោង ថ្ងៃ
-          ខែ ឆ្នាំកំណើត ឲ្យបានត្រឹមត្រូវ។ នោះនឹងអាចឲ្យបងប្អូនអ្នក ប្រើប្រាស់
-          តាមដានពីការឡើងចុះ នៃរាសីផ្ទាល់ខ្លួនម្នាក់ៗ សម្រាប់រយៈពេល ប្រចាំ១០ឆ្នាំ
-          ប្រចាំឆ្នាំ ប្រចាំខែ ប្រចាំថ្ងៃ និងប្រចាំម៉ោង។ 
+          {{
+            $t(
+              'By entering their date and time of birth, users are capable of calculating their Bazi chart consisting of eight Chinese characters. With the guidance and help of the Bazi chart, we are able to forecast how our life stage will fluctuate and present opportunities based on the luck cycle shifting forward every ten years in which we can also track it annually, monthly, daily, and every two hours.  '
+            )
+          }}
         </p>
       </div>
 
@@ -205,17 +206,17 @@ useSeoMeta({
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
         >
-          ត្រីវិស័យ
+          {{ $t('Compass') }}
         </h1>
 
         <p
           class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
         >
-          App My Destiny - វាសនាខ្ញុំ បានដាក់បញ្ចូលក្បួនដែលអាចគណនា និងវាស់
-          ត្រីវិស័យចំនួន ២ប្រភេទ៖ ទី១ គឺ ត្រីវិស័យសម្រាប់វាស់ និងគណនាទិសឆុង និង
-          ទិសហេង និង ទី២ គឺ ត្រីវិស័យតារាសាស្ត្រ ដើម្បីគណនា
-          និងបង្ហាញអំពីដំណើរគោចររបស់តារាសាស្ត្រ ដែលជះឥទ្ធិពលដល់ជោគជតារាសី
-          របស់មនុស្សជាតិ។
+          {{
+            $t(
+              'App My Destiny- វាសនាខ្ញុំ has offered us two distinct categories of compasses: the first one makes it feasible to calculate the positive and negative energy directions, and the second one exhibits the flying star chart annually, monthly, daily, and every two hours. These compasses, therefore, carry a real intangible influence on our daily lives.'
+            )
+          }}
         </p>
       </div>
 
@@ -245,15 +246,17 @@ useSeoMeta({
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
         >
-          លេខសាស្ត្រ
+          {{ $t('Number Horoscope ') }}
         </h1>
 
         <p
           class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer max-w-[800px]"
         >
-          បងប្អូនអ្នកប្រើប្រាស់ អាចប្រើមុខងារនេះដើម្បីពិនិត្យមើល លេខទូរសព្ទ
-          លេខផ្ទះ លេខយានយន្ត និង លេខគណនីធនាគារ ថាតើលេខនោះ ជាលេខនាំសំណាង ឬ
-          មានឥទ្ធិពលអាក្រក់សម្រាប់ការប្រើប្រាស់។
+          {{
+            $t(
+              'This feature allows users to evaluate the positive and negative aspects of their phone number, house number, vehicle plate number, and bank account number.'
+            )
+          }}
         </p>
       </div>
 
@@ -265,7 +268,7 @@ useSeoMeta({
   </div>
 
   <div
-    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px] overflow-x-hidden"
+    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px] overflow-x-hidden overflow-y-hidden"
   >
     <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg
@@ -313,9 +316,11 @@ useSeoMeta({
         <p
           class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
         >
-          App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ តែមួយគត់របស់ប្រទេសកម្ពុជា
-          ដែលបង្កើតឡើងដោយជនជាតិខ្មែរ ប្រកបដោយស្តង់ដារល្អបំផុត កម្រិតអន្តរជាតិ
-          ដែលអាចដោនឡូតបានតាមរយៈ Play Store Android និង App Store iOS ។
+          {{
+            $t(
+              'App My Destiny - វាសនាខ្ញុំ adheres to international standards by displaying a variety of Feng Shui and Bazi applicable and practical formulas available to be downloaded from the Play Store for Android users and the App Store for iOS device owners. '
+            )
+          }}
         </p>
 
         <NuxtImg src="/images/download 1.png" />

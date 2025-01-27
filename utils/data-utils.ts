@@ -2,26 +2,26 @@ export const priceList = [
   {
     id: 1,
     price: '0.8',
-    title: 'ប្រចាំថ្ងៃ',
-    date: 'សុពលភាព ១ថ្ងៃ',
+    title: 'Daily',
+    date: 'valid 1 day',
   },
   {
     id: 2,
     price: '2.8',
-    title: 'ប្រចាំអាទិត្យ',
-    date: 'សុពលភាព ៧ថ្ងៃ',
+    title: 'Weekly',
+    date: 'valid 7 days',
   },
   {
     id: 3,
     price: '6.8',
-    title: 'ប្រចាំខែ',
-    date: 'សុពលភាព ៣០ថ្ងៃ',
+    title: 'Monthly',
+    date: 'valid 30 days',
   },
   {
     id: 4,
     price: '68',
-    title: 'ប្រចាំឆ្នាំ',
-    date: 'សុពលភាព ៣៦៥ថ្ងៃ',
+    title: 'Yearly',
+    date: 'valid 365 days',
   },
 ];
 

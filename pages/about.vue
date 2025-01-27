@@ -14,7 +14,7 @@ useSeoMeta({
   >
     <div class="container mx-auto">
       <div
-        class="flex flex-col md:flex-row items-start md:pt-[246px] pt-[170px]"
+        class="flex flex-col md:flex-row items-start md:pt-[246px] pt-[170px] overflow-y-hidden"
       >
         <div
           v-motion
@@ -56,46 +56,61 @@ useSeoMeta({
               easing: 'easeInOut',
             },
           }"
-          class="md:bg-none w-full md:ml-0 ml-0 flex flex-col items-start justify-start text-start px-5 md:px-0 bg-gradient-to-b from-primary-orange-100 to-primary-dark pb-10 mt-6 gap-8"
+          class="md:bg-none w-full md:ml-0 ml-0 flex flex-col items-start justify-start text-start px-5 md:px-0 bg-gradient-to-b from-primary-orange-100 to-primary-dark pb-10 md:mt-6 gap-8"
         >
           <h1
             class="lg:text-[42px] text-[24px] font-bold text-colors-red-main font-khmer"
           >
-            អំពី App My Destiny - វាសនាខ្ញុំ
+            {{ $t('About App My Destiny - វាសនាខ្ញុំ') }}
           </h1>
 
           <p
             class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
           >
-            ការខិតខំប្រឹងប្រែង និងការប្ដេជ្ញាចិត្តរបស់ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី
-            ក្នុងការ ចែករំលែកចំណេះដឹងហុងស៊ុយ មានក្បួនខ្នាតត្រឹម ត្រូវពិតប្រាកដ
-            ដែលទទួល ស្គាល់ជាអន្តរជាតិទៅកាន់បងប្អូនប្រជាជនកម្ពុជា បានធ្វើឲ្យ
-            <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]"
-              >ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span
+            {{ $t('The striving, dedication, and commitment of') }}
+            <span
+              class="text-gray-main font-[700] lg:text-[24px] text-[20px]"
+              >{{ $t('Oknha Master Naly Long,') }}</span
             >
-            ក្លាយទៅជាម៉ាស្ទ័រ ហុងស៊ុយ ដ៏ល្បីនៅក្នុង ប្រទេសកម្ពុជា និងក្រៅប្រទេស។
+            {{
+              $t(
+                'the international accredited Feng Shui Master, to share and educate the Strategic and Scientific Feng Shui knowledge to Cambodian citizens made her a well-known figure both domestically and abroad for her generosity and expertise.'
+              )
+            }}
           </p>
 
           <div>
             <p
               class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
             >
-              <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]"
-                >ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span
+              <span
+                class="text-gray-main font-[700] lg:text-[24px] text-[20px]"
+                >{{ $t('She') }}</span
               >
-              បានបញ្ចប់ការសិក្សាផ្នែកវិជ្ជាហុងស៊ុយ
-              ពីគ្រូហុងស៊ុយល្បីៗនៅលើពិភពលោកជាច្រើនរូបរួមមាន៖
+              {{
+                $t(
+                  'has completed and succeeded her studies in the field of Strategic and Scientific Feng Shui under the guidance and tutoring of various renowned Grand Masters and Masters from various parts of the world, involving'
+                )
+              }}
             </p>
             <ul
               class="list-disc pl-10 text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
             >
-              <li>Grand Master Vincent Koh (ប្រទេសសឹង្ហបុរី)</li>
-              <li>Grand Master Tan Khoon Yong (ប្រទេសសឹង្ហបុរី)</li>
-              <li>Grand Master Dr. Stephen Skinner (សហរដ្ឋអាមេរិក)</li>
-              <li>Master Mas (ប្រទេសថៃ)</li>
-              <li>Master Goh Guan Leong (ប្រទេសសឹង្ហបុរី)</li>
-              <li>Master Francis Leyau (ប្រទេសម៉ាឡេស៊ី)</li>
-              <li>Master Davin (សហរដ្ឋអាមេរិក)</li>
+              <li>{{ $t('Grand Master Vincent Koh (Singapore)') }}</li>
+              <li>{{ $t('Grand Master Tan Khoon Yong (Singapore)') }}</li>
+              <li>
+                {{
+                  $t(
+                    'Grand Master Stephen Skinner (The United States of America)'
+                  )
+                }}
+              </li>
+              <li>
+                {{ $t('Master Mas (Thailand)') }}
+              </li>
+              <li>{{ $t('Master Goh Guan Leong (Singapore)') }}</li>
+              <li>{{ $t('Master Leyau (Malaysia)') }}</li>
+              <li>{{ $t('Master Davin (The United States of America') }}</li>
             </ul>
           </div>
         </div>
@@ -105,6 +120,7 @@ useSeoMeta({
 
   <div class="relative">
     <NuxtImg
+      :placeholder="[50, 25]"
       src="/images/programming-background-with-person-working-with-codes-computer 1.png"
       class="w-full h-[1052px] object-cover"
     />
@@ -115,20 +131,21 @@ useSeoMeta({
       <p
         class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
       >
-        រូបមន្តហុងស៊ុយសំខាន់ៗមានការទទួលស្គាល់ជាអន្តរជាតិ
-        បានរៀបចំចងក្រងយ៉ាងល្អិតល្អន់ ហ្មត់ចត់ និងផ្ចិតផ្ទង់ ដោយ
+        {{ $t('The most substantial outcome of') }}
         <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">
-          ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី
+          {{ $t('Oknha Master Naly Long’s') }}
         </span>
-        ដើម្បីយកមកអភិវឌ្ឍឲ្យក្លាយ ទៅជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ។
+        {{
+          $t(
+            'resolute and tenacious commitment, along with her striving, responsibility, morality, and professionalism, is her well-organized plan for discovering, gathering, and compiling practical Strategic and Scientific Feng Shui formulas corresponding with accuracy, precision, meticulousness, and logic as a means to construct the App My Destiny - វាសនាខ្ញុំ.'
+          )
+        }}
       </p>
 
       <p
         class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer pt-10"
       >
-        អ្នកអភិវឌ្ឍន៍ App My Destiny - វាសនាខ្ញុំ
-        គឺជាក្រុមដែលមានសម្ថភាពមានបទពិសោធន៍ជាច្រើនលើការអភិវឌ្ឍន៍កម្មវិធីទូរស័ព្ទ
-        និងប្រព័ន្ធគ្រប់គ្រងទូទៅ សម្រាប់វិស័យឯកជន និងស្ថាប័នសាធារណៈ។
+        {{ $t('No line') }}
       </p>
     </div>
   </div>

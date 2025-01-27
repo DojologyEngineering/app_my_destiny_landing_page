@@ -21,7 +21,7 @@
     <h1
       class="font-khmer font-bold md:text-[48px] text-[24px] text-colors-red-main whitespace-nowrap"
     >
-      ក្រុមហ៊ុនបុត្រសម្ព័ន្ធ
+      {{ $t('Our Operating Companies') }}
     </h1>
 
     <div class="hidden lg:flex flex-row items-center justify-center gap-16">
