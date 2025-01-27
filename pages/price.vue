@@ -6,6 +6,7 @@ useSeoMeta({
     'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
   ogDescription:
     'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
+  ogImage: '/images/logo.png',
 });
 import { NuxtImg } from '#components';
 </script>
