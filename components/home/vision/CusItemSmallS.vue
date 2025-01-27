@@ -8,9 +8,11 @@
           <NuxtImg :src="src" alt="Icon" class="w-full h-full" />
         </div>
         <div class="mt-10 space-y-4 text-center">
-          <p class="text-xl font-khmer font-bold text-gray-main">{{ name }}</p>
+          <p class="text-xl font-khmer font-bold text-gray-main">
+            {{ $t(name || '') }}
+          </p>
 
-          <p class="text-gray-dark text-xl/10">{{ des }}</p>
+          <p class="text-gray-dark text-xl/10">{{ $t(des || '') }}</p>
         </div>
         <div
           class="absolute bottom-0 right-0 w-10 h-10 bg-gradient-to-br from-transparent to-[#D3D3D3]/20 rounded-bl-[2rem]"

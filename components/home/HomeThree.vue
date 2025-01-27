@@ -5,7 +5,7 @@
         <p
           class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main text-center"
         >
-          មុខងារសំខាន់ៗ App My Destiny - វាសនាខ្ញុំ
+          {{ $t('Features of App My Destiny - វាសនាខ្ញុំ') }}
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 px-5 md:px-0">
@@ -31,7 +31,7 @@
       </div>
       <div class="flex justify-center my-10">
         <CustomButton url="/contact">
-          <span class="text-info-text">ស្វែងយល់បន្ថែម</span>
+          <span class="text-info-text">{{ $t('Learn More') }}</span>
         </CustomButton>
       </div>
     </div>
@@ -41,6 +41,7 @@
   </div>
 </template>
 <script setup lang="ts">
+import { featurs } from '@/utils/home-utils';
 import CustomButton from '../cusComponents/CustomButton.vue';
 import PartnersFooter from '../PartnersFooter.vue';
 import FeatureCom from './feature/FeatureCom.vue';

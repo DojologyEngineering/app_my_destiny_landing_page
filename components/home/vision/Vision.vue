@@ -4,7 +4,7 @@
   >
     <div class="flex justify-center pt-8">
       <p class="font-khmer font-bold md:text-5xl text-2xl text-info-text">
-        ទស្សនវិស័យ បេសកកម្ម និងគុណតម្លៃ
+        {{ $t('Vision, Mission, Core Value') }}
       </p>
     </div>
     <div class="container mx-auto mt-10">
@@ -20,4 +20,5 @@
 <script setup lang="ts">
 import CusItem from './CusItem.vue';
 import CusItemSmallS from './CusItemSmallS.vue';
+import { visions } from '@/utils/home-utils';
 </script>

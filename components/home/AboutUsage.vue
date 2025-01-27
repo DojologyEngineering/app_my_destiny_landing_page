@@ -17,16 +17,16 @@
           <p
             class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main mb-4"
           >
-            បងប្អូនអ្នកប្រើប្រាស់ App My Destiny - វាសនាខ្ញុំ
+            {{ $t('Subscribers App My Destiny - វាសនាខ្ញុំ') }}
           </p>
           <p
             class="font-khmer text-xl md:text-2xl text-gray-main leading-relaxed"
           >
-            បងប្អូនដែលប្រើប្រាស់ App My Destiny - វាសនាខ្ញុំ
-            គឺជាប្រជាជនកម្ពុជាយើងដែលរស់ នៅទាំងក្នុងប្រទេសកម្ពុជា និងក្រៅប្រទេស
-            ហើយក៏ជាប្រជាជាតិផ្សេងទៀតនៅក្នុងពិភពលោក ដែលជាម្ចាស់អាជីវកម្មខ្នាតតូច
-            មធ្យម ធំ​ ជាស្រីមេផ្ទះ បុគ្គលិកការិយាល័យ និងអ្នកលក់ដូរ អ្នកជំនួញ
-            និងមន្ត្រីបម្រើកិច្ចការសាធារណៈ ដែលកំពុងរស់នៅក្នុងសម័យឌីជីថល។
+            {{
+              $t(
+                'We hold the unequivocal and firm conviction that with the backing of the guidance and preventative measures that App My Destiny- វាសនាខ្ញុំ offers, our Cambodians will rapidly step forward to a better living standard, prosperity, harmony, enhancement, and development.'
+              )
+            }}
           </p>
         </div>
       </div>

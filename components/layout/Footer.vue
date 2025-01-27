@@ -19,22 +19,29 @@
             <NuxtImg
               src="/images/footer-image/footer-logo.png"
               alt="My Destiny Logo"
-              class="object-contain md:min-w-[259px] md:min-h-[227px] min-w-[118px] min-h-[104px]"
+              width="259"
+              height="227"
+              class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px]"
             />
           </div>
           <div class="text-center md:flex flex-col items-start">
             <h2 class="text-xl font-semibold mb-4">
-              <p class="text-khmer text-xs md:text-xl bold text-left">
+              <p
+                class="text-khmer text-xs md:text-xl bold text-left"
+                v-if="locale == 'km'"
+              >
                 ក្រុមហ៊ុន ហ្វេង ស៊ុយ សេនធ័រ (ខេមបូឌា) ឯ.ក Feng Shui Center
                 (Cambodia) Co., Ltd.
+              </p>
+              <p class="text-khmer text-xs md:text-xl bold text-left" v-else>
+                {{ $t('Feng Shui Center (Cambodia) Co., Ltd.') }}
               </p>
             </h2>
 
             <p
               class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-2"
             >
-              #អគារ 743-744 ផ្លូវ 1952 ភូមិបាយ៉ាប សង្កាត់ភ្នំពេញថ្មី ខណ្ឌសែនសុខ
-              រាជធានីភ្នំពេញ
+              {{ $t('Building 743, 744 Street 1952, Phnom Penh 120801') }}
             </p>
 
             <p
@@ -95,7 +102,7 @@
     >
       <div class="container mx-auto">
         <p class="text-khmer md:text-base text-body text-info-text">
-          Privacy Policy |  Terms and Conditions | Copyright 2025 App My Destiny
+          {{ $t('footer') }}
         </p>
       </div>
     </div>
@@ -104,6 +111,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue/dist/iconify.js';
+const { locale } = useI18n();
 </script>
 
 <style scoped></style>

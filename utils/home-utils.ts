@@ -1,39 +1,39 @@
 export const featurs = [
   {
     route: '/contact',
-    des: 'គណនាតួរាសីទាំង 8 ដែលមានរាសីខាងលើ និងរាសីខាងក្រោម........',
+    des: 'By entering their date and time of birth, users are capable of .........',
     image: '/images/home-image/feature_1.png',
   },
   {
     route: '/contact',
-    des: 'ពិនិត្យមើលលេខទូរស័ព្ទ លេខផ្ទះ លេខយានយន្ត និង លេខគណនី...........',
+    des: 'This feature allows users to evaluate the positive and negative............',
     image: '/images/home-image/feature_2.png',
   },
   {
     route: '/contact',
-    des: 'ពិនិត្យមើលលេខទូរស័ព្ទ លេខផ្ទះ លេខយានយន្ត និង លេខគណនី...........',
+    des: 'App My Destiny- វាសនាខ្ញុំ has offered us two distinct categories of ...',
     image: '/images/home-image/feature_2.png',
   },
   {
     route: '/contact',
-    des: 'ជាបណ្តុំនៃវីដេអូសំខាន់ៗ សម្រាប់ចែករំលែកចំណេះដឹងដូចជា៖ របៀបប្រើប្រាស់ ......',
+    des: 'A collection of important videos to share knowledge such as: How to use ......',
     image: '/images/home-image/feature_4.png',
   },
 ];
 export const visions = [
   {
-    name: 'ទស្សនវិស័យ',
-    des: 'ចក្ខុវិស័យរយៈពេលវែងរបស់ពួកយើង គឺដើម្បីនៅជាប់ជាមួយ នឹងប្រជាជនកម្ពុជា យើងបោះជំហានទៅមុខជាមួយគ្នា ជាមួយនឹងមនុស្សជាតិទាំងឡាយ ជុំវិញពិភពលោក ផ្តល់ប្រឹក្សា ចែករំលែក និងបង្ហាញផ្លូវ ដើម្បីឈានទៅរកការរស់នៅមួយ ប្រកបដោយ សេចក្តីសុខ សុខដុមរមនា ការអភិវឌ្ឍន៍ និងភាពចម្រុងចម្រើន តាមរយៈវិជ្ជា ហុងស៊ុយ ពិតប្រាកដ មានក្បួនច្បាប់ ក្បួនខ្នាតត្រឹមត្រូវ ដែលទទួលស្គាល់ ជាអន្តរជាតិ ជាមួយនឹងបច្ចេកវិទ្យាសម័យថ្មី សម័យឌីជីថល។ ',
+    name: 'Vision',
+    des: 'Our long-term vision is to stay connected with our Cambodian citizens and jointly step forward together simultaneously with other nations around the globe. So that we can build the framework for consultation, sharing, demonstration, and paving the way to better living standards, prosperity, harmony, and enhancement using modern technology in this new digital era and the internationally recognized Strategic and Scientific Feng Shui.',
     image: '/images/home-image/vision1.png',
   },
   {
-    name: 'បេសកកម្ម',
-    des: 'រក្សាបាននូវ ភាពតាមទាន់សម័យកាល នៃបច្ចេកវិទ្យាឌីជីថលទំនើប និងស្តង់ដារអន្តរជាតិ នៃកម្មវិធីទូរស័ព្ទ  និងបន្តធ្វើឱ្យប្រសើរឡើង លើមុខងារផ្សេងៗរបស់ App My Destiny - វាសនាខ្ញុំ ។ ហើយអ្វីដែលសំខាន់បំផុតនោះ គឺបន្ថែមរូបមន្ត ហុងស៊ុយ ផ្សេងៗទៀត ដែលជាប្រយោជន៍សម្រាប់មនុស្សជាតិ។ ',
+    name: 'Mission',
+    des: 'The most significant breakthrough is the inclusion of deeper practical and essential formulas that satisfy the demands of citizens—as users. Evidently, App My Destiny - វាសនាខ្ញុំ is a mobile application using the formulas of Bazi and Strategic and Scientific Feng Shui that comply with global norms for quality, credibility, morality, and ethics. It originated in order to advance the common goals of the people of Cambodia and all of the world at large.',
     image: '/images/home-image/vision2.png',
   },
   {
-    name: 'គុណតម្លៃ',
-    des: 'រាល់ផលិតផលដែលនឹងបង្កើត និងបានបង្កើតរួចហើយ ដោយ ក្រុមហ៊ុន ហ្វេងស៊ុយ សេនធ័រ (ខាមបូឌា) ឯ.ក គឺតែងតែផ្តោតលើ គុណតម្លៃជាចំបាច់។ តួយ៉ាងដូចជា App My Destiny - វាសនាខ្ញុំ ត្រូវបានបង្កើតជាមួយ នឹងភាពល្អិតល្អន់ ហ្មត់ចត់ ប្រកបដោយ សីលធម៌ វិជ្ជាជីវៈ ភាពទទួលខុសត្រូវ សេចក្តីថ្លៃថ្នូរ ឡូហ្ស៊ិច និងបច្ចេកវិទ្យាខ្ពស់ បែបឌីជីថល។ ',
+    name: 'Core Value',
+    des: 'The priority placed on value-based production permeates every product that Feng Shui Center (Cambodia) Co., Ltd. has produced and intends to continue to produce. The perfect instance of a product that embraces morality, responsibility, dignity, logic, and cutting-edge digital technologies is App My Destiny - វាសនាខ្ញុំ.',
     image: '/images/home-image/vision3.png',
   },
 ];
