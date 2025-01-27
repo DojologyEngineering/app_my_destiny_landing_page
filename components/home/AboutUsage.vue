@@ -3,10 +3,12 @@
     <NuxtImg
       src="/images/home-image/calendar.png"
       class="w-full h-auto md:block hidden"
+      format="webp"
     />
     <NuxtImg
-      src="https://s3-alpha-sig.figma.com/img/26b3/3be2/d0b57525203b38411b49c5a28a501bf5?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P8hihSDTw3DJvYlTG0TpEiHJjfW14TSZiIGAl2xt~ZnEhqd2uZsvH6ORJiAKwmt-~mb2WrGeSjrK27TDs2sbb-6hjn5j-QdI6XfwOZYFbqimgW7zmsiQpGpWH4sNKNrEB0o2ZrBwoIQoNJKeZOpYgkQIErzag1Khmn3UBurtqtY1hnzT6JVm9eXcheI0xEW0gbr1gAPaFFOX098NGSeXpVSF4-JuKgAY1LO9jUvBpAVbTq2idCg6oVqxNp3tpLRQkQeZQtGQ0A8u8XttrGIoJOUNyxmGvNkl3i7hxD8bHHzDFAzQV7IZuvZdfehJ9~9v-MRnERxzOqXwp1sFUA8nvA__"
+      src="/images/home-image/calendar_small.png"
       class="pt-72 md:hidden block bg-[#FFF2DE]"
+      format="webp"
     />
 
     <div

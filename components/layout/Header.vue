@@ -59,6 +59,7 @@
           v-for="item in navigationItemsLeft"
           :to="localePath(item.route)"
           class="text-colors-red-main font-bold hover:opacity-80 transition-colors text-[22px]"
+          format="webp"
         >
           {{ $t(item.name) }}
         </NuxtLink>
@@ -74,6 +75,7 @@
               src="/images/logo.png"
               alt="Logo"
               class="object-cover w-full h-full"
+              format="webp"
             />
           </div>
         </div>

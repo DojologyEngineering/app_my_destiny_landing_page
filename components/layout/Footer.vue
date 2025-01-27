@@ -11,7 +11,7 @@
             href="#"
             class="hover:opacity-80 transition-opacity"
           >
-            <NuxtImg :src="name" :alt="name" class="w-7 h-7" />
+            <NuxtImg :src="name" :alt="name" class="w-7 h-7" format="webp" />
           </a>
         </div>
         <div class="flex flex-row pr-5 gap-5 lg:mt-0 mt-10 align-top">
@@ -98,7 +98,12 @@
                 href="#"
                 class="hover:opacity-80 transition-opacity"
               >
-                <NuxtImg :src="name" :alt="name" class="w-12 h-12" />
+                <NuxtImg
+                  :src="name"
+                  :alt="name"
+                  class="w-12 h-12"
+                  format="webp"
+                />
               </a>
             </div>
           </div>

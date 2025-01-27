@@ -4,7 +4,7 @@
   >
     <div class="flex flex-col p-3 items-center">
       <div class="w-[142px] h-[142px]">
-        <NuxtImg :src="src" class="w-full h-full" />
+        <NuxtImg :src="src" class="w-full h-full" format="webp" />
       </div>
       <div class="mt-3">
         <p class="text-2xl font-khmer font-bold text-gray-main">

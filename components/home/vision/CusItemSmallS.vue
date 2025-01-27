@@ -5,7 +5,7 @@
         <div
           class="absolute -top-12 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full flex items-center justify-center shadow-lg"
         >
-          <NuxtImg :src="src" alt="Icon" class="w-full h-full" />
+          <NuxtImg :src="src" alt="Icon" class="w-full h-full" format="webp" />
         </div>
         <div class="mt-10 space-y-4 text-center">
           <p class="text-xl font-khmer font-bold text-gray-main">
