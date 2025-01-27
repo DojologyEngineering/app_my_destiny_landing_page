@@ -25,8 +25,10 @@
             តាមរយៈប្រព័ន្ធអេឡិចត្រូនិក។
           </p>
         </div>
-        <div v-else>
-          <p class="md:text-2xl/10 text-xl/7 font-khmer text-gray-main">
+        <div v-else class="flex justify-center">
+          <p
+            class="md:text-2xl/10 text-xl/7 font-khmer text-info-text max-w-[1100px] text-center"
+          >
             {{
               $t(
                 'App My Destiny- វាសនាខ្ញុំ - a cutting-edge Strategic and Scientific Feng Shui mobile application. We work closely and extensively with all of our business partners, ranging from the banking system to the telecommunications company, paving the way for us to capitalize on the most advanced digital technology and secure electronic payment methods.'

@@ -102,7 +102,7 @@
     >
       <div class="container mx-auto">
         <p class="text-khmer md:text-base text-body text-info-text">
-          {{ $t('footer') }}
+          Privacy Policy | Terms and Conditions | Copyright 2025 App My Destiny
         </p>
       </div>
     </div>
