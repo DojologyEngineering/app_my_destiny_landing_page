@@ -12,7 +12,9 @@
             {{ $t(name || '') }}
           </p>
 
-          <p class="text-gray-dark text-xl/10">{{ $t(des || '') }}</p>
+          <p class="text-gray-main text-lg/10 md:text-xl/10 font-khmer">
+            {{ $t(des || '') }}
+          </p>
         </div>
         <div
           class="absolute bottom-0 right-0 w-10 h-10 bg-gradient-to-br from-transparent to-[#D3D3D3]/20 rounded-bl-[2rem]"

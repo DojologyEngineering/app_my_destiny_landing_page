@@ -51,7 +51,9 @@
 
         <div class="flex justify-center mt-10 mb-pb-0 pb-12">
           <CustomButton url="/contact">
-            <span class="text-info-text">{{ $t('Learn More') }}</span>
+            <span class="text-info-text text-xl md:text-2xl font-khmer">{{
+              $t('Learn More')
+            }}</span>
           </CustomButton>
         </div>
       </div>

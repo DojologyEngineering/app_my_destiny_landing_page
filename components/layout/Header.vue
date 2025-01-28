@@ -20,9 +20,9 @@
       </div>
 
       <div class="w-[10%] flex justify-center">
-        <div
+        <NuxtLink
           class="hover:cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-info-text rounded-full shadow-lg p-4"
-          @click="handleNavigate"
+          :to="localePath('/')"
         >
           <div class="md:w-28 md:h-28 w-20 h-20 rounded-full overflow-hidden">
             <NuxtImg
@@ -32,7 +32,7 @@
               format="webp"
             />
           </div>
-        </div>
+        </NuxtLink>
       </div>
       <div
         class="w-[45%] hidden lg:flex justify-around items-center font-khmer"
@@ -82,10 +82,6 @@ import { Icon } from '@iconify/vue/dist/iconify.js';
 import { ref } from 'vue';
 import CusDrawer from '../cusComponents/CusDrawer.vue';
 import LanguageSelector from '../cusComponents/LanguageSelector.vue';
-const navigate = useRouter();
-const handleNavigate = () => {
-  navigate.push(localePath('/'));
-};
 const localePath = useLocalePath();
 const isDrawerOpen = ref(false);
 const toggleDrawer = () => {
