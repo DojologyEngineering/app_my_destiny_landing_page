@@ -5,7 +5,7 @@
     <div
       class="bg-cover text-info-text bg-[url(/images/contact/map.png)] pb-10"
     >
-      <div class="pt-20 md:pt-40" v-motion-fade v-if="locale == 'km'">
+      <div class="pt-20 md:pt-7" v-motion-fade v-if="locale == 'km'">
         <!-- <p
           class="text-2xl md:text-title font-khmer font-bold text-colors-red-main"
         >
@@ -22,7 +22,7 @@
           Feng Shui Center (Cambodia) Co., Ltd.
         </p>
       </div>
-      <div v-else class="pt-20 md:pt-40">
+      <div v-else class="pt-20 md:pt-7">
         <p class="text-xl md:text-title font-khmer font-bold text-info-text">
           App My Destiny- វាសនាខ្ញុំ
         </p>

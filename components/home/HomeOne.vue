@@ -55,7 +55,7 @@
         <div class="relative w-full max-w-[664px]" v-motion-fade>
           <NuxtImg
             class="w-full h-auto object-cover"
-            src="/images/home-image/mobile-background.svg"
+            src="/images/home-image/mobile-background.png"
             alt="Background"
             format="webp"
           />

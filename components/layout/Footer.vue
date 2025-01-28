@@ -24,8 +24,8 @@
               class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px]"
             />
           </div>
-          <div class="text-center md:flex flex-col items-start">
-            <h2 class="text-xl font-semibold mb-4">
+          <div class="text-center md:flex flex-col items-start space-y-9">
+            <h2 class="text-xl font-semibold">
               <p
                 class="text-khmer text-xs md:text-xl bold text-left"
                 v-if="locale == 'km'"
