@@ -47,8 +47,8 @@
             <NuxtImg
               src="/images/home-image/qr.png"
               alt="App My Destiny"
-              class="w-full h-full"
-              format="webp"
+              class="w-[500px] h-full"
+              placeholder="qr"
             />
           </div>
         </div>
@@ -57,14 +57,14 @@
             class="w-full h-auto object-cover"
             src="/images/home-image/mobile-background.png"
             alt="Background"
-            format="webp"
+            placeholder="mobile-background"
           />
 
           <NuxtImg
             class="absolute inset-0 mx-auto w-auto h-full object-contain z-10"
             src="/images/home-image/mobile.png"
             alt="Mobile"
-            format="webp"
+            placeholder="mobile"
           />
         </div>
       </div>

@@ -57,6 +57,7 @@
               width="40"
               height="auto"
               class="md:flex hidden"
+              placeholder="logo"
             />
             <div class="left-0 pl-3 text-amber-600">
               <span
@@ -109,7 +110,12 @@
                 <div
                   class="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600"
                 >
-                  <NuxtImg :src="lang.logo" width="40" height="40" />
+                  <NuxtImg
+                    :src="lang.logo"
+                    width="40"
+                    height="40"
+                    placeholder="logo"
+                  />
                 </div>
               </li>
             </ListboxOption>

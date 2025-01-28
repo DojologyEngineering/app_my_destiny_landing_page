@@ -5,7 +5,7 @@
         <NuxtImg
           src="/images/home-image/MasterNaly.png"
           class="w-full h-auto"
-          format="webp"
+          placeholder="Master Naly"
         />
         <div
           class="absolute bottom-0 left-0 right-0 h-40 md:hidden block"
@@ -51,7 +51,9 @@
 
         <div class="flex justify-center mt-10 mb-pb-0 pb-12">
           <CustomButton url="/contact">
-            <span class="text-info-text">{{ $t('Learn More') }}</span>
+            <span class="text-info-text text-xl md:text-2xl font-khmer">{{
+              $t('Learn More')
+            }}</span>
           </CustomButton>
         </div>
       </div>
