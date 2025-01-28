@@ -87,7 +87,7 @@
           >
             <ListboxOption
               v-slot="{ active, selected }"
-              v-for="lang in ListLang"
+              v-for="lang in listLang"
               :key="lang.name"
               :value="lang"
               as="template"
@@ -131,20 +131,20 @@ import {
 } from '@headlessui/vue';
 import { NuxtImg } from '#components';
 import { Icon } from '@iconify/vue/dist/iconify.js';
-const { locales, locale, setLocale } = useI18n();
-console.log('locale', locale.value);
+const { locale, setLocale } = useI18n();
+// console.log('locale', locale.value);
 const updateLanguage = (newLanguage) => {
   setLocale(newLanguage);
 };
-const ListLang = [
+const listLang = [
   { name: 'KH', logo: '/images/header/cambodia.png', code: 'km' },
   { name: 'EN', logo: '/images/header/united-kingdom.png', code: 'en' },
 ];
 const selectedLang = ref();
 const getLang = computed(() => {
-  const lang = ListLang.find((val) => val.code === locale.value);
+  const lang = listLang.find((val) => val.code === locale.value);
   selectedLang.value = lang;
   return lang;
 });
-console.log('getLang', getLang);
+// console.log('getLang', getLang);
 </script>
