@@ -137,8 +137,8 @@ const updateLanguage = (newLanguage) => {
   setLocale(newLanguage);
 };
 const ListLang = [
-  { name: 'ខ្មែរ', logo: '/images/header/cambodia.png', code: 'km' },
-  { name: 'English', logo: '/images/header/united-kingdom.png', code: 'en' },
+  { name: 'KH', logo: '/images/header/cambodia.png', code: 'km' },
+  { name: 'EN', logo: '/images/header/united-kingdom.png', code: 'en' },
 ];
 const selectedLang = ref();
 const getLang = computed(() => {

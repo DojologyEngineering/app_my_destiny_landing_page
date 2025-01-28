@@ -48,20 +48,23 @@
               src="/images/home-image/qr.png"
               alt="App My Destiny"
               class="w-full h-full"
+              format="webp"
             />
           </div>
         </div>
         <div class="relative w-full max-w-[664px]" v-motion-fade>
           <NuxtImg
             class="w-full h-auto object-cover"
-            src="/images/home-image/mobile-background.svg"
+            src="/images/home-image/mobile-background.png"
             alt="Background"
+            format="webp"
           />
 
           <NuxtImg
             class="absolute inset-0 mx-auto w-auto h-full object-contain z-10"
             src="/images/home-image/mobile.png"
             alt="Mobile"
+            format="webp"
           />
         </div>
       </div>

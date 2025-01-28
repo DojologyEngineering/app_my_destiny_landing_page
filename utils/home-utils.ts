@@ -12,7 +12,7 @@ export const featurs = [
   {
     route: '/contact',
     des: 'App My Destiny- វាសនាខ្ញុំ has offered us two distinct categories of ...',
-    image: '/images/home-image/feature_2.png',
+    image: '/images/home-image/feature_3.png',
   },
   {
     route: '/contact',

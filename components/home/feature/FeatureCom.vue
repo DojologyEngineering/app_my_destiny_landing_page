@@ -4,6 +4,7 @@
       <NuxtImg
         :src="src"
         class="w-[97px] h-[97px] md:w-[130px] md:h-[130px] lg:w-[200px] lg:h-[200px] object-contain"
+        format="webp"
       />
 
       <p class="ml-5 max-w-[340px] text-2xl font-khmer text-gray-main">
