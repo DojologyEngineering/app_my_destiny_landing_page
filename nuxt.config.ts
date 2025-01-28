@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   i18n: {
     lazy: true,
     langDir: 'locales',
-    strategy: 'prefix',
+    strategy: 'prefix_and_default',
     locales: [
       {
         code: 'en',
@@ -43,5 +43,10 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'en',
     vueI18n: 'en',
+  },
+  nitro: {
+    prerender: {
+      routes: ['/'],
+    },
   },
 });
