@@ -9,6 +9,19 @@ useSeoMeta({
   ogImage: '/images/logo.png',
 });
 import { NuxtImg } from '#components';
+const navigate = useRouter();
+
+const navigateLink = () => {
+  if (navigator.userAgent.match(/Android|BlackBerry|Opera Mini|IEMobile/i)) {
+    window.open(
+      'https://play.google.com/store/apps/details?id=com.ecoinsoft.mydestiny&hl=en_US' // Replace with your App Store URL
+    );
+  } else {
+    window.open(
+      'https://apps.apple.com/kh/app/my-destiny-by-master-naly/id884500810' // Replace with your App Store URL
+    );
+  }
+};
 </script>
 
 <template>
@@ -85,6 +98,7 @@ import { NuxtImg } from '#components';
 
           <button
             class="px-8 py-4 font-[400] text-info-text bg-colors-red-main rounded-[100px] mt-8"
+            @click="navigateLink"
           >
             DOWNLOAD
           </button>
@@ -138,6 +152,7 @@ import { NuxtImg } from '#components';
 
           <button
             class="px-8 py-4 font-[400] text-info-text bg-colors-red-main rounded-[100px] mt-8"
+            @click="navigateLink"
           >
             DOWNLOAD
           </button>
