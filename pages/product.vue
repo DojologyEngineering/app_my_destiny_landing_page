@@ -149,9 +149,16 @@ const { locale } = useI18n();
       </div>
 
       <NuxtImg
+        v-if="locale === 'en'"
         :placeholder="[50, 25]"
         src="/images/Scene-8 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[420px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
+        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[410px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
+      />
+      <NuxtImg
+        v-if="locale === 'km'"
+        :placeholder="[50, 25]"
+        src="/images/Scene-8 1.png"
+        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[350px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
       />
     </div>
 
