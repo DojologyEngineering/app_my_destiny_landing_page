@@ -41,6 +41,6 @@ deploy:
     - chmod 600 ~/.ssh/id_rsa # Sets appropriate permissions
     - ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts # Adds server to known hosts
     - scp -r .output "$SERVER_USER@$SERVER_HOST:$SERVER_PATH" # Copies files
-    - ssh "$SERVER_USER@$SERVER_HOST" "cd $SERVER_PATH && sudo cp -r .output/ /var/www/html/.output/" # Restarts the server
+    - ssh "$SERVER_USER@$SERVER_HOST" "cd $SERVER_PATH && sudo cp -r .output /var/www/html/" # Restarts the server
   only:
     - main
