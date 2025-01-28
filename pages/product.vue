@@ -149,6 +149,7 @@ const { locale } = useI18n();
       </div>
 
       <NuxtImg
+        :placeholder="[50, 25]"
         src="/images/Scene-8 1.png"
         class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[400px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
       />
@@ -283,6 +284,7 @@ const { locale } = useI18n();
       </div>
 
       <NuxtImg
+        :placeholder="[50, 25]"
         src="/images/Scene-7 1.png"
         class="absolute left-1/2 top-1/2 lg:translate-x-[9%] md:-translate-x-[70%] -translate-x-[50%] -md:translate-x-[70%] lg:translate-y-[-55%] translate-y-[-98%] md:w-[587px] md:h-[630px] w-[587px] h-[430px] object-cover"
       />
@@ -345,7 +347,7 @@ const { locale } = useI18n();
           }}
         </p>
 
-        <NuxtImg src="/images/download 1.png" />
+        <NuxtImg src="/images/download 1.png" :placeholder="[50, 20]" />
       </div>
     </div>
   </div>

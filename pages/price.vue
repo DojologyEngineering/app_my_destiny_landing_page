@@ -127,6 +127,7 @@ const navigateLink = () => {
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
         class="relative w-[500px] h-[937px] object-cover -left-4 sm:hidden flex"
+        :placeholder="[50, 25]"
       >
       </NuxtImg>
     </div>

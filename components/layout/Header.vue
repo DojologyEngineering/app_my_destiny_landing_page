@@ -30,7 +30,7 @@
               alt="Logo"
               class="object-cover w-full h-full"
               format="webp"
-              placeholder="logo"
+              :placeholder="[50, 25]"
             />
           </div>
         </NuxtLink>
@@ -71,7 +71,7 @@
           @click="toggleDrawer"
           class="text-colors-red-main text-lg font-khmer font-bold"
         >
-          {{ item.name }}
+          {{ $t(item.name) }}
         </NuxtLink>
       </nav>
     </template>

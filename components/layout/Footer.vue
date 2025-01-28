@@ -15,7 +15,7 @@
               :src="name"
               :alt="name"
               class="w-7 h-7"
-              :placeholder="name"
+              :placeholder="[50, 25]"
             />
           </a>
         </div>
@@ -27,7 +27,7 @@
               width="259"
               height="227"
               class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px]"
-              placeholder="My Destiny Logo"
+              :placeholder="[50, 25]"
             />
           </div>
           <div class="text-center md:flex flex-col items-start md:space-y-9">
@@ -108,7 +108,7 @@
                   :src="name"
                   :alt="name"
                   class="w-12 h-12"
-                  :placeholder="name"
+                  :placeholder="[50, 25]"
                 />
               </NuxtLink>
             </div>
