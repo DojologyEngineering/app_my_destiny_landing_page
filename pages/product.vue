@@ -245,7 +245,7 @@ const { locale } = useI18n();
       <NuxtImg
         v-else="locale === 'km'"
         src="/images/Scene-2 1.png"
-        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[115%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[125%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
     </div>
 
