@@ -1,4 +1,4 @@
-export const featurs = [
+export const features = [
   {
     route: '/contact',
     des: 'By entering their date and time of birth, users are capable of .........',

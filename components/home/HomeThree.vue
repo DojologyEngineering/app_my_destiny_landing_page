@@ -9,7 +9,7 @@
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 px-5 md:px-0">
-        <div v-for="item in featurs">
+        <div v-for="item in features">
           <div
             v-motion
             :initial="{
@@ -25,7 +25,11 @@
               },
             }"
           >
-            <FeatureCom :src="item.image" :des="item.des" :url="item.route" />
+            <FeatureCom
+              :src="item.image"
+              :des="item.des"
+              :url="localPath(item.route)"
+            />
           </div>
         </div>
       </div>
@@ -41,8 +45,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import { featurs } from '@/utils/home-utils';
+import { features } from '@/utils/home-utils';
 import CustomButton from '../cusComponents/CustomButton.vue';
 import PartnersFooter from '../PartnersFooter.vue';
 import FeatureCom from './feature/FeatureCom.vue';
+const localPath = useLocalePath();
 </script>
