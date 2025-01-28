@@ -6,8 +6,11 @@ stages:
   - deploy
 
 cache:
+  # Cache both node_modules and Nuxt's `.output`
   paths:
     - node_modules/
+    - .output/
+  key: "$CI_COMMIT_REF_SLUG" # Cache key based on the branch name
 
 variables:
   NODE_ENV: production
@@ -16,8 +19,8 @@ variables:
 install_dependencies:
   stage: install
   script:
-    - echo "Installing dependencies..."
-    - npm install
+    - echo "Restoring cache or installing dependencies..."
+    - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else npm install; fi
   artifacts:
     paths:
       - node_modules/
@@ -33,6 +36,8 @@ build:
   artifacts:
     paths:
       - .output/
+  dependencies:
+    - install_dependencies # Use the `node_modules` cache
   only:
     - main
 
