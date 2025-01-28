@@ -9,6 +9,7 @@ useSeoMeta({
   ogImage: '/images/logo.png',
 });
 import { NuxtImg } from '#components';
+const navigate = useRouter();
 
 const navigateLink = () => {
   if (navigator.userAgent.match(/Android|BlackBerry|Opera Mini|IEMobile/i)) {
@@ -122,12 +123,10 @@ const navigateLink = () => {
         width="929"
         height="1137"
         class="hidden sm:flex mr-96"
-        :placeholder="[50, 25]"
       ></NuxtImg>
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
         class="relative w-[500px] h-[937px] object-cover -left-4 sm:hidden flex"
-        :placeholder="[50, 25]"
       >
       </NuxtImg>
     </div>
