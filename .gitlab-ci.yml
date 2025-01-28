@@ -12,9 +12,11 @@ cache:
 variables:
   NODE_ENV: production
 
+# Install dependencies
 install_dependencies:
   stage: install
   script:
+    - echo "Installing dependencies..."
     - npm install
   artifacts:
     paths:
@@ -22,9 +24,11 @@ install_dependencies:
   only:
     - main
 
+# Build the Nuxt.js application
 build:
   stage: build
   script:
+    - echo "Building the application..."
     - npm run generate
   artifacts:
     paths:
@@ -32,15 +36,29 @@ build:
   only:
     - main
 
+# Deploy the build to the server
 deploy:
   stage: deploy
-  script:
-    - apk add --no-cache openssh # Installs SSH in the runner environment
+  before_script:
+    - echo "Preparing SSH configuration..."
+    - apk add --no-cache openssh
     - mkdir -p ~/.ssh
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa # Adds the private key
-    - chmod 600 ~/.ssh/id_rsa # Sets appropriate permissions
-    - ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts # Adds server to known hosts
-    - scp -r .output "$SERVER_USER@$SERVER_HOST:$SERVER_PATH" # Copies files
-    - ssh "$SERVER_USER@$SERVER_HOST" "cd $SERVER_PATH && sudo cp -r .output /var/www/html/" # Restarts the server
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H "$SERVER_HOST" >> ~/.ssh/known_hosts
+  script:
+    - set -e
+    - echo "Verifying SSH connection..."
+    - ssh "$SERVER_USER@$SERVER_HOST" "echo 'SSH connection successful!'"
+    - echo "Deploying application..."
+    - scp -r .output "$SERVER_USER@$SERVER_HOST:$SERVER_PATH"
+    - ssh "$SERVER_USER@$SERVER_HOST" "
+      set -e &&
+      echo 'Restarting server...' &&
+      sudo cp -r $SERVER_PATH/.output/ /var/www/html/ &&
+      echo 'Deployment completed successfully!'"
+  after_script:
+    - echo "Cleaning up sensitive files..."
+    - rm -f ~/.ssh/id_rsa
   only:
     - main
