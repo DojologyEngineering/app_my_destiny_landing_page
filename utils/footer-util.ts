@@ -7,12 +7,11 @@ export const menuItems = [
 ];
 
 export const menuItemsSmallScreen = [
-  'HOME',
-  'PRODUCT',
-  'PRICE',
-  'EVENT',
-  'ABOUT',
-  'CONTACT',
+  { name: 'HOME', route: '/' },
+  { name: 'PRODUCT', route: '/product' },
+  { name: 'PRICE', route: '/price' },
+  { name: 'ABOUT', route: '/about' },
+  { name: 'CONTACT', route: '/contact' },
 ];
 
 export const socialIcons = [

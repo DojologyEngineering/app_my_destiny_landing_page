@@ -4,16 +4,16 @@
   >
     <div class="flex flex-col p-3 items-center">
       <div class="w-[142px] h-[142px]">
-        <NuxtImg :src="src" class="w-full h-full" format="webp" />
+        <NuxtImg :src="src" class="w-full h-full" placeholder="image item" />
       </div>
       <div class="mt-3">
-        <p class="text-2xl font-khmer font-bold text-gray-main">
+        <p class="text-lg/10 md:text-xl/10 font-khmer font-bold text-gray-main">
           {{ $t(name || '') }}
         </p>
       </div>
     </div>
     <div>
-      <p class="text-gray-dark text-2xl/10">{{ $t(des || '') }}</p>
+      <p class="text-gray-main text-2xl/10">{{ $t(des || '') }}</p>
     </div>
   </div>
 </template>

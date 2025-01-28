@@ -47,7 +47,7 @@
             src="/images/home-image/aba.png"
             alt="ABA Bank"
             class="w-full h-full"
-            format="webp"
+            placeholder="aba"
           />
         </div>
         <div class="w-[300px] h-[86px] bg-white rounded-[8px]">
@@ -55,7 +55,7 @@
             src="/images/home-image/wing.png"
             alt="Wing Bank"
             class="w-full h-full"
-            format="webp"
+            placeholder="wing"
           />
         </div>
         <div class="w-[300px] h-[86px]">
@@ -63,7 +63,7 @@
             src="/images/home-image/cellcard.png"
             alt="Cellcard"
             class="w-full h-full"
-            format="webp"
+            placeholder="cellcard"
           />
         </div>
       </div>

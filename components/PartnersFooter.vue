@@ -31,6 +31,7 @@
         :src="item.img"
         :width="item.w"
         :height="item.h"
+        :placeholder="index"
       />
     </div>
 
@@ -41,6 +42,7 @@
         :src="item.img"
         :width="item.w"
         :height="item.h"
+        :placeholder="index"
       />
     </div>
     <div class="flex flex-row items-center justify-center gap-16 lg:hidden">
@@ -50,6 +52,7 @@
         :src="item.img"
         :width="item.w"
         :height="item.h"
+        :placeholder="index"
       />
     </div>
     <div class="flex flex-row items-center justify-center gap-16 lg:hidden">
@@ -59,6 +62,7 @@
         :src="item.img"
         :width="item.w"
         :height="item.h"
+        :placeholder="index"
       />
     </div>
   </div>

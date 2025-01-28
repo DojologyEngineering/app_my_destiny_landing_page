@@ -11,7 +11,12 @@
             href="#"
             class="hover:opacity-80 transition-opacity"
           >
-            <NuxtImg :src="name" :alt="name" class="w-7 h-7" format="webp" />
+            <NuxtImg
+              :src="name"
+              :alt="name"
+              class="w-7 h-7"
+              :placeholder="name"
+            />
           </a>
         </div>
         <div class="flex flex-row pr-5 gap-5 lg:mt-0 mt-10 align-top">
@@ -22,9 +27,10 @@
               width="259"
               height="227"
               class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px]"
+              placeholder="My Destiny Logo"
             />
           </div>
-          <div class="text-center md:flex flex-col items-start space-y-9">
+          <div class="text-center md:flex flex-col items-start md:space-y-9">
             <h2 class="text-xl font-semibold">
               <p
                 class="text-khmer text-xs md:text-xl bold text-left"
@@ -77,14 +83,14 @@
         </div>
         <div class="flex flex-col md:flex-row gap-16 items-start">
           <nav class="hidden lg:flex flex-col space-y-4 text-xs">
-            <a
+            <NuxtLink
               v-for="item in menuItems"
               :key="item.name"
-              href="#"
+              :to="localePath(item.route)"
               class="transition-colors text-xs md:text-base font-khmer font-bold"
             >
               {{ item.name }}
-            </a>
+            </NuxtLink>
           </nav>
 
           <div
@@ -92,7 +98,7 @@
           >
             <p class="md:text-base font-khmer font-bold">FOLLOW US</p>
             <div class="grid grid-cols-2 gap-4 justify-items-center">
-              <a
+              <NuxtLink
                 v-for="(name, index) in socialIcons"
                 :key="index"
                 href="#"
@@ -102,23 +108,23 @@
                   :src="name"
                   :alt="name"
                   class="w-12 h-12"
-                  format="webp"
+                  :placeholder="name"
                 />
-              </a>
+              </NuxtLink>
             </div>
           </div>
         </div>
         <nav
           class="lg:hidden flex flex-row items-center justify-around w-full px-5 mt-5"
         >
-          <a
+          <NuxtLink
             v-for="item in menuItemsSmallScreen"
-            :key="item"
-            href="#"
+            :key="item.name"
+            :to="localePath(item.route)"
             class="transition-colors text-xs"
           >
-            {{ item }}
-          </a>
+            {{ item.name }}
+          </NuxtLink>
         </nav>
       </div>
     </div>
@@ -136,7 +142,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue/dist/iconify.js';
-
+const localePath = useLocalePath();
 const { locale } = useI18n();
 </script>
 
