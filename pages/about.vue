@@ -15,7 +15,7 @@ useSeoMeta({
   >
     <div class="container mx-auto">
       <div
-        class="flex flex-col md:flex-row items-start md:pt-[246px] pt-[170px] overflow-y-hidden"
+        class="flex flex-col md:flex-row items-end md:pt-[246px] pt-[170px] overflow-y-hidden"
       >
         <div
           v-motion
@@ -35,9 +35,10 @@ useSeoMeta({
         >
           <NuxtImg
             src="/images/home-image/MasterNaly.png"
-            class="w-full h-auto"
             :placeholder="[50, 25]"
+            class="w-[70%] mx-auto md:mx-0 md:w-[498px] md:h-full object-contain"
           />
+
           <div
             class="absolute bottom-0 left-0 right-0 h-40 md:hidden block"
             style="background: linear-gradient(to bottom, transparent, #edc125)"
@@ -57,7 +58,7 @@ useSeoMeta({
               easing: 'easeInOut',
             },
           }"
-          class="md:bg-none w-full md:ml-0 ml-0 flex flex-col items-start justify-start text-start px-5 md:px-0 bg-gradient-to-b from-primary-orange-100 to-primary-dark pb-10 md:mt-6 gap-8"
+          class="md:bg-none w-full md:-ml-20 ml-0 flex flex-col items-start justify-start text-start px-5 md:px-0 bg-gradient-to-b from-primary-orange-100 to-primary-dark pb-10 md:mt-6 gap-8"
         >
           <h1
             class="lg:text-[42px] text-[24px] font-bold text-colors-red-main font-khmer"

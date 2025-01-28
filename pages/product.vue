@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { NuxtImg } from '#components';
 useSeoMeta({
   title: 'Product',
   ogTitle: 'Product',
@@ -13,10 +12,15 @@ useSeoMeta({
 
 <template>
   <div class="relative">
-    <NuxtImg src="/images/Opt01_IFSA-Leaflet_A5 1.png" class="hidden md:flex" />
+    <NuxtImg
+      src="/images/Opt01_IFSA-Leaflet_A5 1.png"
+      class="hidden md:flex w-full"
+      :placeholder="[50, 25]"
+    />
     <NuxtImg
       src="/images/Opt01_IFSA-Leaflet_A5 1.png"
       class="md:hidden flex h-[698px] object-cover w-full"
+      :placeholder="[50, 25]"
     />
 
     <div
@@ -67,6 +71,9 @@ useSeoMeta({
 
     <NuxtImg
       src="/images/19 1.png"
+      :placeholder="[50, 25]"
+      width="1516"
+      height="899"
       v-motion
       :initial="{
         y: 200,
@@ -273,6 +280,7 @@ useSeoMeta({
   >
     <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg
+        :placeholder="[50, 25]"
         v-motion
         :initial="{
           y: 200,
@@ -289,7 +297,6 @@ useSeoMeta({
         src="/images/Mockup-02 1.png"
         width="532"
         height="766"
-        class=""
       />
 
       <div

@@ -12,10 +12,11 @@ import { NuxtImg } from '#components';
 </script>
 
 <template>
-  <div class="bg-primary-main md:h-screen sm:h-[500px] h-[420px] relative">
+  <div class="bg-primary-main md:h-[970px] sm:h-[500px] h-[420px] relative">
     <NuxtImg
       src="/images/price_banner.png"
-      class="md:w-[900px] w-[551px] md:h-[560px] sm:h-[360px] absolute left-1/2 bottom-0 transform -translate-x-1/2"
+      class="md:w-[1094px] w-[551px] md:h-[717px] sm:h-[360px] absolute left-1/2 bottom-0 transform -translate-x-1/2"
+      :placeholder="[50, 25]"
     />
   </div>
 
@@ -41,6 +42,7 @@ import { NuxtImg } from '#components';
         width="929"
         height="1137"
         class=""
+        :placeholder="[50, 25]"
       >
       </NuxtImg>
       <p class="absolute top-40 left-[400px] text-white text-[48px] font-bold">
@@ -107,6 +109,7 @@ import { NuxtImg } from '#components';
         width="929"
         height="1137"
         class="hidden sm:flex mr-96"
+        :placeholder="[50, 25]"
       ></NuxtImg>
       <NuxtImg
         src="/images/Phone-Women-Hand-Mockup.png"
