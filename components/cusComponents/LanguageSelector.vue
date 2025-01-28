@@ -87,7 +87,7 @@
           >
             <ListboxOption
               v-slot="{ active, selected }"
-              v-for="lang in ListLang"
+              v-for="lang in listLang"
               :key="lang.name"
               :value="lang"
               as="template"
