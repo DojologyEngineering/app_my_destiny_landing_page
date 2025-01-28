@@ -33,11 +33,7 @@
               v-else
               class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
             >
-              {{
-                $t(
-                  'With more than 600,000 downloads as of now, App My Destiny- វាសនាខ្ញុំ, the Strategic and Scientific Feng Shui mobile application is available for users of both Android and iOS devices.'
-                )
-              }}
+              {{ $t('with_more_than') }}
             </p>
           </div>
           <div
@@ -48,7 +44,7 @@
               src="/images/home-image/qr.png"
               alt="App My Destiny"
               class="w-[500px] h-full"
-              placeholder="qr"
+              :placeholder="[50, 25]"
             />
           </div>
         </div>
@@ -57,14 +53,14 @@
             class="w-full h-auto object-cover"
             src="/images/home-image/mobile-background.png"
             alt="Background"
-            placeholder="mobile-background"
+            :placeholder="[50, 25]"
           />
 
           <NuxtImg
             class="absolute inset-0 mx-auto w-auto h-full object-contain z-10"
             src="/images/home-image/mobile.png"
             alt="Mobile"
-            placeholder="mobile"
+            :placeholder="[50, 25]"
           />
         </div>
       </div>

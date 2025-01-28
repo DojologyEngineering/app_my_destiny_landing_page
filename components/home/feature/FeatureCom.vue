@@ -4,7 +4,7 @@
       <NuxtImg
         :src="src"
         class="w-[97px] h-[97px] md:w-[130px] md:h-[130px] lg:w-[200px] lg:h-[200px] object-contain"
-        placeholder="image for feature"
+        :placeholder="[50, 25]"
       />
 
       <p

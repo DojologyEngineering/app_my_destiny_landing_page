@@ -9,7 +9,7 @@
             :src="src"
             alt="Icon"
             class="w-full h-full"
-            placeholder="image item small screen"
+            :placeholder="[50, 25]"
           />
         </div>
         <div class="mt-10 space-y-4 text-center">

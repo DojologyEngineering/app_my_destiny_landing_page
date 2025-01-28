@@ -3,12 +3,12 @@
     <NuxtImg
       src="/images/home-image/calendar.png"
       class="w-full h-auto md:block hidden"
-      placeholder="calendar"
+      :placeholder="[50, 20]"
     />
     <NuxtImg
       src="/images/home-image/calendar_small.png"
-      class="pt-72 md:hidden block bg-[#FFF2DE]"
-      placeholder="calendar_small"
+      class="pt-72 md:hidden block bg-[#FFF2DE] w-full"
+      :placeholder="[50, 20]"
     />
 
     <div

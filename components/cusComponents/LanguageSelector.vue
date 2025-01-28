@@ -57,7 +57,7 @@
               width="40"
               height="auto"
               class="md:flex hidden"
-              placeholder="logo"
+              :placeholder="[50, 20]"
             />
             <div class="left-0 pl-3 text-amber-600">
               <span
@@ -84,7 +84,7 @@
           leave-to-class="opacity-0"
         >
           <ListboxOptions
-            class="absolute max-h-60 w-[140px] overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm"
+            class="absolute max-h-60 md:w-32 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm"
           >
             <ListboxOption
               v-slot="{ active, selected }"
@@ -110,7 +110,7 @@
                 <div
                   class="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600"
                 >
-                  <NuxtImg
+                  <img
                     :src="lang.logo"
                     width="40"
                     height="40"

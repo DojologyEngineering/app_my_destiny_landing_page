@@ -5,7 +5,7 @@
         <NuxtImg
           src="/images/home-image/MasterNaly.png"
           class="w-full h-auto"
-          placeholder="Master Naly"
+          :placeholder="[50, 25]"
         />
         <div
           class="absolute bottom-0 left-0 right-0 h-40 md:hidden block"
