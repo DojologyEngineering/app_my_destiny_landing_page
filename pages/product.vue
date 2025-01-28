@@ -152,13 +152,13 @@ const { locale } = useI18n();
         v-if="locale === 'en'"
         :placeholder="[50, 25]"
         src="/images/Scene-8 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[410px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
+        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[420px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
       />
       <NuxtImg
         v-if="locale === 'km'"
         :placeholder="[50, 25]"
         src="/images/Scene-8 1.png"
-        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[350px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
+        class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[390px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
       />
     </div>
 
@@ -252,7 +252,7 @@ const { locale } = useI18n();
       <NuxtImg
         v-else="locale === 'km'"
         src="/images/Scene-2 1.png"
-        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[125%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[118%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
     </div>
 
