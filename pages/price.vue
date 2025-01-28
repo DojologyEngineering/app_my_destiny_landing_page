@@ -9,7 +9,6 @@ useSeoMeta({
   ogImage: '/images/logo.png',
 });
 import { NuxtImg } from '#components';
-const navigate = useRouter();
 
 const navigateLink = () => {
   if (navigator.userAgent.match(/Android|BlackBerry|Opera Mini|IEMobile/i)) {
@@ -55,9 +54,9 @@ const navigateLink = () => {
         width="929"
         height="1137"
         class=""
-        :placeholder="[50, 25]"
-      >
-      </NuxtImg>
+        placeholder="blur"
+      />
+
       <p class="absolute top-40 left-[400px] text-white text-[48px] font-bold">
         {{ $t('Price List') }}
       </p>

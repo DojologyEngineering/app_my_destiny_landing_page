@@ -8,6 +8,8 @@ useSeoMeta({
     'As a team feng shui app of Cambodia is responsible International level of 600,000 students six hundred thousand',
   ogImage: '/images/logo.png',
 });
+
+const { locale } = useI18n();
 </script>
 
 <template>
@@ -189,8 +191,14 @@ useSeoMeta({
       </div>
 
       <NuxtImg
+        v-if="locale === 'en'"
         src="/images/Scene-3 1.png"
         class="absolute left-1/2 top-1/2 lg:translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] -translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:-translate-y-[88%] -translate-y-[130%] sm:w-[587px] sm:h-[630px] w-[387px] h-[387px] object-cover"
+      />
+      <NuxtImg
+        v-else="locale === 'km'"
+        src="/images/Scene-3 1.png"
+        class="absolute left-1/2 top-1/2 lg:translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] -translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:-translate-y-[88%] -translate-y-[115%] sm:w-[587px] sm:h-[630px] w-[387px] h-[387px] object-cover"
       />
     </div>
 
@@ -229,8 +237,14 @@ useSeoMeta({
       </div>
 
       <NuxtImg
+        v-if="locale === 'en'"
         src="/images/Scene-2 1.png"
         class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[130%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+      />
+      <NuxtImg
+        v-else="locale === 'km'"
+        src="/images/Scene-2 1.png"
+        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[115%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
     </div>
 
