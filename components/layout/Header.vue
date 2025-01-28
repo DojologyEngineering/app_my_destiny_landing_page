@@ -12,12 +12,8 @@
         <NuxtLink
           v-for="item in navigationItemsLeft"
           :to="localePath(item.route)"
-<<<<<<< Updated upstream
-          class="text-colors-red-main font-bold hover:opacity-80 transition-colors text-[22px]"
-=======
           class="text-colors-red-main font-khmer font-bold hover:opacity-80 transition-colors text-[22px]"
           format="webp"
->>>>>>> Stashed changes
         >
           {{ $t(item.name) }}
         </NuxtLink>
