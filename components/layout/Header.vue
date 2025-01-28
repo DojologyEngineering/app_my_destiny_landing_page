@@ -83,7 +83,7 @@ import CusDrawer from '../cusComponents/CusDrawer.vue';
 import LanguageSelector from '../cusComponents/LanguageSelector.vue';
 const navigate = useRouter();
 const handleNavigate = () => {
-  navigate.push('/');
+  navigate.push(localePath('/'));
 };
 const localePath = useLocalePath();
 const isDrawerOpen = ref(false);
