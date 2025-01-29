@@ -20,7 +20,8 @@ install_dependencies:
   stage: install
   script:
     - echo "Restoring cache or installing dependencies..."
-    - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else yarn install; fi
+    - yarn install
+    # - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else yarn install; fi
   artifacts:
     paths:
       - node_modules/
