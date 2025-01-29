@@ -12,10 +12,11 @@ useSeoMeta({
 <template>
   <div
     class="bg-gradient-to-r from-[#fdcb64] via-[#f0bb50] to-[#e0a837] overflow-x-hidden"
+    v-motion-fade
   >
     <div class="container mx-auto">
       <div
-        class="flex flex-col md:flex-row items-end md:pt-[246px] pt-[170px] overflow-y-hidden"
+        class="flex flex-col md:flex-row items-start md:pt-[246px] pt-[170px] overflow-y-hidden overflow-x-hidden"
       >
         <div
           v-motion
@@ -128,10 +129,10 @@ useSeoMeta({
     />
 
     <div
-      class="absolute bg-primary-main/80 h-auto w-full bottom-16 lg:px-[120px] px-4 my-10 py-10 flex flex-col items-center"
+      class="absolute bg-primary-main/80 h-auto w-full bottom-16 px-4 my-10 py-10 flex flex-col items-center"
     >
       <p
-        class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
+        class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer container"
       >
         {{ $t('The most substantial outcome of') }}
         <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">
@@ -145,7 +146,7 @@ useSeoMeta({
       </p>
 
       <p
-        class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer pt-10"
+        class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer pt-10 container"
       >
         {{ $t('No line') }}
       </p>

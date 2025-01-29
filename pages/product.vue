@@ -13,7 +13,7 @@ const { locale } = useI18n();
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative" v-motion-fade>
     <NuxtImg
       src="/images/Opt01_IFSA-Leaflet_A5 1.png"
       class="hidden md:flex w-full"
@@ -51,25 +51,27 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="flex flex-col justify-center items-center gap-8 py-20 lg:px-[124px] px-4 bg-primary-yellow"
+    class="flex flex-col justify-center items-center gap-8 py-20 px-4 bg-primary-yellow"
   >
-    <h1
-      class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer"
-    >
-      App My Destiny-វាសនាខ្ញុំ
-    </h1>
-    <p
-      class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer text-center lg:px-[190px] px:[46px]"
-    >
-      <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">{{
-        $t('App My Destiny - វាសនាខ')
-      }}</span
-      >{{
-        $t(
-          'includes Bazi’s function enabling us to keep track of our daily zodiac, and it comprises a number horoscope that permits us to figure out whether or not our phone number, house number, vehicle plate number, and bank account number are good; and the Chinese compass (Luo Pan) allows us to calculate the positive and negative energies from each direction so that we can take preventative actions.'
-        )
-      }}
-    </p>
+    <div class="container mx-auto flex flex-col gap-4">
+      <h1
+        class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center"
+      >
+        App My Destiny-វាសនាខ្ញុំ
+      </h1>
+      <p
+        class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer text-center"
+      >
+        <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">{{
+          $t('App My Destiny - វាសនាខ')
+        }}</span
+        >{{
+          $t(
+            'includes Bazi’s function enabling us to keep track of our daily zodiac, and it comprises a number horoscope that permits us to figure out whether or not our phone number, house number, vehicle plate number, and bank account number are good; and the Chinese compass (Luo Pan) allows us to calculate the positive and negative energies from each direction so that we can take preventative actions.'
+          )
+        }}
+      </p>
+    </div>
 
     <NuxtImg
       src="/images/19 1.png"
@@ -93,7 +95,7 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="flex flex-col gap-20 md:py-20 py-4 lg:px-[124px] px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
+    class="flex flex-col gap-20 md:py-20 py-4 px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
   >
     <h1
       v-motion
@@ -114,7 +116,9 @@ const { locale } = useI18n();
       {{ $t('App Features') }}
     </h1>
 
-    <div class="bg-primary-yellow-dark relative rounded-[30px]">
+    <div
+      class="bg-primary-yellow-dark relative rounded-[30px] container mx-auto w-fu"
+    >
       <div
         v-motion
         :initial="{
@@ -133,6 +137,7 @@ const { locale } = useI18n();
       >
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
+          z
         >
           {{ $t('Basic Info') }}
         </h1>
@@ -164,7 +169,9 @@ const { locale } = useI18n();
 
     <!-- revers -->
 
-    <div class="bg-info-text relative rounded-[30px] py-[10px] mt-10">
+    <div
+      class="bg-info-text relative rounded-[30px] py-[10px] mt-10 container mx-auto"
+    >
       <div
         v-motion
         :initial="{
@@ -188,7 +195,7 @@ const { locale } = useI18n();
         </h1>
 
         <p
-          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer max-w-[1000px]"
+          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
         >
           {{
             $t(
@@ -210,7 +217,7 @@ const { locale } = useI18n();
       />
     </div>
 
-    <div class="bg-info-light relative rounded-[30px] mt-10">
+    <div class="bg-info-light relative rounded-[30px] mt-10 container mx-auto">
       <div
         v-motion
         :initial="{
@@ -252,11 +259,13 @@ const { locale } = useI18n();
       <NuxtImg
         v-else="locale === 'km'"
         src="/images/Scene-2 1.png"
-        class="absolute top-1/2 xl:left-28 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[118%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+        class="absolute top-1/2 right-1/2 xl:left-28 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[118%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
     </div>
 
-    <div class="bg-colors-red-light relative rounded-[30px] py-[10px] mt-10">
+    <div
+      class="bg-colors-red-light relative rounded-[30px] py-[10px] mt-10 container mx-auto"
+    >
       <div
         v-motion
         :initial="{
@@ -293,13 +302,13 @@ const { locale } = useI18n();
       <NuxtImg
         :placeholder="[50, 25]"
         src="/images/Scene-7 1.png"
-        class="absolute left-1/2 top-1/2 lg:translate-x-[9%] md:-translate-x-[70%] -translate-x-[50%] -md:translate-x-[70%] lg:translate-y-[-55%] translate-y-[-102%] md:w-[587px] md:h-[630px] w-[587px] h-[430px] object-cover"
+        class="absolute left-1/2 top-1/2 lg:translate-x-[9%] md:-translate-x-[70%] -translate-x-[50%] -md:translate-x-[20%] lg:translate-y-[-55%] md:translate-y-[-75%] sm:translate-y-[-102%] translate-y-[-102%] md:w-[587px] md:h-[630px] w-[587px] h-[430px] object-cover"
       />
     </div>
   </div>
 
   <div
-    class="lg:h-auto h-auto flex flex-row items-start justify-center lg:px-[124px] px-[46px] overflow-x-hidden overflow-y-hidden"
+    class="lg:h-auto h-auto flex flex-row items-start justify-center overflow-x-hidden overflow-y-hidden container mx-auto"
   >
     <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg
@@ -323,7 +332,7 @@ const { locale } = useI18n();
       />
 
       <div
-        class="flex flex-col gap-10"
+        class="flex flex-col gap-10 md:px-0 px-6"
         v-motion
         :initial="{
           x: 200,
