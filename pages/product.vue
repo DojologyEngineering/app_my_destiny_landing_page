@@ -51,25 +51,27 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="flex flex-col justify-center items-center gap-8 py-20 lg:px-[124px] px-4 bg-primary-yellow"
+    class="flex flex-col justify-center items-center gap-8 py-20 px-4 bg-primary-yellow"
   >
-    <h1
-      class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer"
-    >
-      App My Destiny-វាសនាខ្ញុំ
-    </h1>
-    <p
-      class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer text-center container"
-    >
-      <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">{{
-        $t('App My Destiny - វាសនាខ')
-      }}</span
-      >{{
-        $t(
-          'includes Bazi’s function enabling us to keep track of our daily zodiac, and it comprises a number horoscope that permits us to figure out whether or not our phone number, house number, vehicle plate number, and bank account number are good; and the Chinese compass (Luo Pan) allows us to calculate the positive and negative energies from each direction so that we can take preventative actions.'
-        )
-      }}
-    </p>
+    <div class="container mx-auto flex flex-col gap-4">
+      <h1
+        class="lg:text-[48px] text-[24px] font-bold text-colors-red-main font-khmer text-center"
+      >
+        App My Destiny-វាសនាខ្ញុំ
+      </h1>
+      <p
+        class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer text-center"
+      >
+        <span class="text-gray-main font-[700] lg:text-[24px] text-[20px]">{{
+          $t('App My Destiny - វាសនាខ')
+        }}</span
+        >{{
+          $t(
+            'includes Bazi’s function enabling us to keep track of our daily zodiac, and it comprises a number horoscope that permits us to figure out whether or not our phone number, house number, vehicle plate number, and bank account number are good; and the Chinese compass (Luo Pan) allows us to calculate the positive and negative energies from each direction so that we can take preventative actions.'
+          )
+        }}
+      </p>
+    </div>
 
     <NuxtImg
       src="/images/19 1.png"
@@ -93,7 +95,7 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="flex flex-col gap-20 md:py-20 py-4 lg:px-[124px] px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
+    class="flex flex-col gap-20 md:py-20 py-4 px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
   >
     <h1
       v-motion
@@ -330,7 +332,7 @@ const { locale } = useI18n();
       />
 
       <div
-        class="flex flex-col gap-10"
+        class="flex flex-col gap-10 md:px-0 px-6"
         v-motion
         :initial="{
           x: 200,
