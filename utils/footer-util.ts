@@ -2,8 +2,8 @@ export const menuItems = [
   { name: 'HOME', route: '/' },
   { name: 'PRODUCT', route: '/product' },
   { name: 'PRICE', route: '/price' },
-  { name: 'ABOUT', route: '/about' },
-  { name: 'CONTACT', route: '/contact' },
+  { name: 'ABOUT US', route: '/about' },
+  { name: 'CONTACT US', route: '/contact' },
 ];
 
 export const menuItemsSmallScreen = [

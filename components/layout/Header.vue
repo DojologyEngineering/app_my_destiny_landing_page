@@ -12,8 +12,9 @@
         <NuxtLink
           v-for="item in navigationItemsLeft"
           :to="localePath(item.route)"
-          class="text-colors-red-main font-khmer font-bold hover:opacity-80 transition-colors text-[22px]"
-          format="webp"
+          class="relative text-colors-red-main md:text-base text-xl font-khmer font-bold transition-all after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-colors-red-main after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
+          format="webp,png"
+          :class="{ 'after:scale-x-100': isActive(item.route) }"
         >
           {{ $t(item.name) }}
         </NuxtLink>
@@ -42,7 +43,8 @@
           v-for="item in navigationItemsRight"
           :key="item"
           :to="localePath(item.route)"
-          class="text-colors-red-main font-bold hover:opacity-80 transition-colors md:text-[22px]"
+          class="relative text-colors-red-main md:text-base text-xl font-khmer font-bold transition-all after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-colors-red-main after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
+          :class="{ 'after:scale-x-100': isActive(item.route) }"
         >
           {{ $t(item.name) }}
         </NuxtLink>
@@ -70,6 +72,7 @@
           :to="localePath(item.route)"
           @click="toggleDrawer"
           class="text-colors-red-main text-lg font-khmer font-bold"
+          :class="{ underline: isActive(item.route) }"
         >
           {{ $t(item.name) }}
         </NuxtLink>
@@ -88,6 +91,7 @@ const isDrawerOpen = ref(false);
 const toggleDrawer = () => {
   isDrawerOpen.value = !isDrawerOpen.value;
 };
+const route = useRoute();
 const navigationItemsLeft = [
   { name: 'HOME', route: '/' },
   { name: 'PRODUCT', route: '/product' },
@@ -104,4 +108,5 @@ const menuItems = [
   { name: 'ABOUT US', route: '/about' },
   { name: 'CONTACT US', route: '/contact' },
 ];
+const isActive = (itemRoute) => route.path === localePath(itemRoute);
 </script>

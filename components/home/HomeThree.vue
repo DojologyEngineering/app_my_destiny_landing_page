@@ -1,7 +1,7 @@
 <template>
   <div class="bg-primary-light">
     <div class="container mx-auto">
-      <div class="flex justify-center py-14">
+      <div class="flex justify-center py-14 px-2">
         <p
           class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main text-center"
         >
