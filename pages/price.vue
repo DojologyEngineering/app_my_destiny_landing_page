@@ -140,13 +140,13 @@ const navigateLink = () => {
           <h1
             class="lg:text-[48px] text-[32px] font-khmer font-bold text-colors-red-main mb-2"
           >
-            {{ item.title }}
+            {{ $t(item.title) }}
           </h1>
           <h1 class="lg:text-[128px] text-[64px] font-bold">
             <span class="text-[48px]">$</span>{{ item.price }}
           </h1>
           <p class="font-[400] text-colors-red-main text-[24px] -mt-6">
-            {{ item.date }}
+            {{ $t(item.date) }}
           </p>
 
           <button
