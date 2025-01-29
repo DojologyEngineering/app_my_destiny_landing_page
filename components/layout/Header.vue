@@ -12,9 +12,11 @@
         <NuxtLink
           v-for="item in navigationItemsLeft"
           :to="localePath(item.route)"
-          class="relative text-colors-red-main md:text-base text-xl font-khmer font-bold transition-all after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-colors-red-main after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
           format="webp,png"
-          :class="{ 'after:scale-x-100': isActive(item.route) }"
+          class="relative text-colors-red-main md:text-base text-xl font-khmer font-bold transition-all after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-primary-dark after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-primary-dark"
+          :class="{
+            'after:scale-x-100 text-primary-dark': isActive(item.route),
+          }"
         >
           {{ $t(item.name) }}
         </NuxtLink>
@@ -43,8 +45,10 @@
           v-for="item in navigationItemsRight"
           :key="item"
           :to="localePath(item.route)"
-          class="relative text-colors-red-main md:text-base text-xl font-khmer font-bold transition-all after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-colors-red-main after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100"
-          :class="{ 'after:scale-x-100': isActive(item.route) }"
+          class="relative text-colors-red-main md:text-base text-xl font-khmer font-bold transition-all after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-primary-dark after:origin-left after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-primary-dark"
+          :class="{
+            'after:scale-x-100 text-primary-dark': isActive(item.route),
+          }"
         >
           {{ $t(item.name) }}
         </NuxtLink>
