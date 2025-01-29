@@ -61,7 +61,7 @@
             />
             <div class="left-0 pl-3 text-amber-600">
               <span
-                class="block truncate md:text-xl font-khmer text-colors-red-main font-bold"
+                class="block truncate md:text-base text-xl font-khmer text-colors-red-main font-bold"
                 >{{ selectedLang.name }}</span
               >
             </div>
@@ -102,7 +102,9 @@
               >
                 <span
                   :class="[
-                    selected ? 'font-medium' : 'font-normal',
+                    selected
+                      ? 'font-medium  md:text-base text-xl'
+                      : 'font-normal  md:text-base text-xl',
                     'block truncate',
                   ]"
                   >{{ lang.name }}</span

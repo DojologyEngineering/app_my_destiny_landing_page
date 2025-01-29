@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
     <div class="flex flex-col md:flex-row items-center">
-      <div class="relative w-full">
+      <div class="relative w-full max-w-[470px] pt-8 px-16 md:px-0">
         <NuxtImg
           src="/images/home-image/MasterNaly.png"
           class="w-full h-auto"

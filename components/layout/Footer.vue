@@ -1,8 +1,8 @@
 <template>
   <footer class="bg-primary-light w-full">
-    <div class="container mx-auto pt-8 lg:px-5">
+    <div class="container mx-auto pt-8">
       <div
-        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-around justify-center"
+        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-between justify-center"
       >
         <div class="lg:hidden flex flex-row w-full px-5 justify-center gap-3">
           <a
@@ -19,69 +19,75 @@
             />
           </a>
         </div>
-        <div class="flex flex-row pr-5 gap-5 lg:mt-0 mt-10 align-top">
-          <div class="flex justify-center md:justify-start pl-5 md:pl-0">
-            <NuxtImg
-              src="/images/footer-image/footer-logo.png"
-              alt="My Destiny Logo"
-              width="259"
-              height="227"
-              class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px]"
-              :placeholder="[50, 25]"
-            />
-          </div>
-          <div class="text-center md:flex flex-col items-start md:space-y-9">
-            <h2 class="text-xl font-semibold">
-              <p
-                class="text-khmer text-xs md:text-xl bold text-left"
-                v-if="locale == 'km'"
-              >
-                ក្រុមហ៊ុន ហ្វេង ស៊ុយ សេនធ័រ (ខេមបូឌា) ឯ.ក Feng Shui Center
-                (Cambodia) Co., Ltd.
-              </p>
-              <p class="text-khmer text-xs md:text-xl bold text-left" v-else>
-                {{ $t('Feng Shui Center (Cambodia) Co., Ltd.') }}
-              </p>
-            </h2>
-
+        <div class="hidden justify-center md:justify-start md:flex">
+          <NuxtImg
+            src="/images/footer-image/footer-logo.png"
+            alt="My Destiny Logo"
+            width="259"
+            height="227"
+            class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px] hidden lg:block"
+            :placeholder="[50, 25]"
+          />
+        </div>
+        <div class="flex flex-row lg:mt-0 mt-5 align-top space-x-4">
+          <NuxtImg
+            src="/images/footer-image/footer-logo.png"
+            alt="My Destiny Logo"
+            width="259"
+            height="227"
+            class="object-contain min-w-[118px] min-h-[104px] pl-4 lg:hidden"
+            :placeholder="[50, 25]"
+          />
+          <div
+            class="text-center md:flex flex-col items-start gap-y-4 space-y-2 pr-10"
+          >
             <p
-              class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-2"
+              class="font-khmer text-xs md:text-xl font-bold text-left md:max-w-[380px]"
+              v-if="locale == 'km'"
             >
+              ក្រុមហ៊ុន ហ្វេង ស៊ុយ សេនធ័រ (ខេមបូឌា) ឯ.ក Feng Shui Center
+              (Cambodia) Co., Ltd.
+            </p>
+            <p class="font-khmer text-xs md:text-xl font-bold text-left" v-else>
+              {{ $t('Feng Shui Center (Cambodia) Co., Ltd.') }}
+            </p>
+            <div class="flex items-center">
               <Icon
                 icon="lucide:map-pin"
                 style="color: #000"
-                class="mr-2 w-8 h-8 md:w-6 md:h-6"
+                class="mr-2 w-6 h-6 md:w-6 md:h-6"
               />
-
-              {{ $t('Building 743, 744 Street 1952, Phnom Penh 120801') }}
-            </p>
-
-            <p
-              class="flex items-center md:justify-center text-khmer text-body md:text-xl text-left mt-3"
-            >
+              <p
+                class="flex items-center md:justify-center font-khmer text-body md:text-xl text-left max-w-[340px]"
+              >
+                {{ $t('Building 743, 744 Street 1952, Phnom Penh 120801') }}
+              </p>
+            </div>
+            <div class="flex items-center">
               <Icon
                 icon="akar-icons:phone"
-                width="24"
-                height="24"
                 style="color: #000"
-                class="mr-2"
+                class="mr-2 w-5 h-5 md:w-6 md:h-6"
               />
-              (+855) 96 82 88 789 | (+855) 92 981 616
-            </p>
-
-            <p class="flex items-center text-khmer text-body md:text-xl mt-3">
+              <p
+                class="flex items-center md:justify-center font-khmer text-body md:text-xl text-left"
+              >
+                (+855) 96 82 88 789 | (+855) 92 981 616)
+              </p>
+            </div>
+            <div class="flex items-center">
               <Icon
                 icon="eva:email-outline"
-                width="24"
-                height="24"
                 style="color: #000"
-                class="mr-2"
+                class="mr-2 w-5 h-5 md:w-6 md:h-6"
               />
-              info@appmydestiny.com
-            </p>
+              <p class="flex items-center font-khmer text-body md:text-xl">
+                info@appmydestiny.com
+              </p>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row gap-16 items-start">
+        <div class="flex justify-center">
           <nav class="hidden lg:flex flex-col space-y-4 text-xs">
             <NuxtLink
               v-for="item in menuItems"
@@ -92,7 +98,8 @@
               {{ item.name }}
             </NuxtLink>
           </nav>
-
+        </div>
+        <div class="flex flex-col md:flex-row items-start">
           <div
             class="hidden lg:flex justify-center md:justify-end gap-4 flex-col items-center"
           >
@@ -142,6 +149,7 @@
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue/dist/iconify.js';
+import { menuItems } from '@/utils/footer-util';
 const localePath = useLocalePath();
 const { locale } = useI18n();
 </script>
