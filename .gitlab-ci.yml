@@ -9,7 +9,6 @@ cache:
   # Cache both node_modules and Nuxt's `.output`
   paths:
     - node_modules/
-    - .output/
   key: '$CI_COMMIT_REF_SLUG' # Cache key based on the branch name
 
 variables:
@@ -21,7 +20,6 @@ install_dependencies:
   script:
     - rm package-lock.json
     - echo "Restoring cache or installing dependencies..."
-    - yarn install --frozen-lockfile
     - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else yarn install --frozen-lockfile; fi
   artifacts:
     paths:
@@ -64,8 +62,8 @@ deploy:
       echo 'Restarting server...' &&
       sudo cp -r $SERVER_PATH/.output/ /var/www/html/ &&
       echo 'Deployment completed successfully!'"
-  # after_script:
-  #   - echo "Cleaning up sensitive files..."
-  #   - rm -f ~/.ssh/id_rsa
+  after_script:
+    - echo "Cleaning up sensitive files..."
+    - rm -f ~/.ssh/id_rsa
   only:
     - main
