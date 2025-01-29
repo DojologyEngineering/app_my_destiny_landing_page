@@ -133,7 +133,7 @@ const { locale } = useI18n();
             easing: 'easeInOut',
           },
         }"
-        class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] xs:pt-[400px] pt-[300px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
+        class="flex flex-col justify-center pb-[120px] lg:pt-[120px] md:pt-[450px] xs:pt-[400px] pt-[330px] lg:pl-[500px] lg:pr-[170px] pl-10 pr-10 gap-4"
       >
         <h1
           class="lg:text-[32px] text-[24px] font-bold text-colors-red-main font-khmer"
@@ -152,8 +152,18 @@ const { locale } = useI18n();
           }}
         </p>
       </div>
-
       <NuxtImg
+        v-if="locale === 'en'"
+        src="/images/Scene-8 1.png"
+        class="absolute right-1/2 xl:left-28 top-1/2 lg:-translate-x-[30%] md:translate-x-[20%] sm:translate-x-[20%] translate-x-[30%] lg:translate-y-[-54%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[445px] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-contain"
+      />
+      <NuxtImg
+        v-else="locale === 'km'"
+        src="/images/Scene-8 1.png"
+        class="absolute top-1/2 right-1/2 xl:left-28 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[118%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+      />
+
+      <!-- <NuxtImg
         v-if="locale === 'en'"
         :placeholder="[50, 25]"
         src="/images/Scene-8 1.png"
@@ -164,7 +174,7 @@ const { locale } = useI18n();
         :placeholder="[50, 25]"
         src="/images/Scene-8 1.png"
         class="absolute lg:-bottom-8 md:bottom-[230px] sm:bottom-[300px] xs:bottom-[300px] bottom-[390px] lg:left-0 md:left:0 xs:-left-20 -left-3 sm:w-[496px] sm:h-[591px] w-[296px] h-[391px] object-cover"
-      />
+      /> -->
     </div>
 
     <!-- revers -->
