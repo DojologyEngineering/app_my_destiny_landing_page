@@ -76,7 +76,9 @@
           :to="localePath(item.route)"
           @click="toggleDrawer"
           class="text-colors-red-main text-lg font-khmer font-bold"
-          :class="{ underline: isActive(item.route) }"
+          :class="{
+            'underline text-primary-dark': isActive(item.route),
+          }"
         >
           {{ $t(item.name) }}
         </NuxtLink>
