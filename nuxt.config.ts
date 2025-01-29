@@ -44,11 +44,11 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     vueI18n: 'en',
   },
-  nitro: {
-    prerender: {
-      routes: ['/'],
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: ['/'],
+  //   },
+  // },
   app: {
     head: {
       title: 'Appmydestiny - Team Feng Shui App of Cambodia',

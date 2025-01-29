@@ -1,16 +1,15 @@
-image: node:22.13-alpine
+image: node:20.9.0
 
 stages:
   - install
   - build
   - deploy
 
-cache:
-  # Cache both node_modules and Nuxt's `.output`
-  paths:
-    - node_modules/
-    - .output/
-  key: '$CI_COMMIT_REF_SLUG' # Cache key based on the branch name
+# cache:
+#   # Cache both node_modules and Nuxt's `.output`
+#   paths:
+#     - node_modules/
+#   key: '$CI_COMMIT_REF_SLUG' # Cache key based on the branch name
 
 variables:
   NODE_ENV: production
@@ -19,8 +18,10 @@ variables:
 install_dependencies:
   stage: install
   script:
+    - rm package-lock.json
     - echo "Restoring cache or installing dependencies..."
-    - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else npm install; fi
+    - yarn install --frozen-lockfile
+    # - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else yarn install --frozen-lockfile; fi
   artifacts:
     paths:
       - node_modules/
@@ -32,7 +33,7 @@ build:
   stage: build
   script:
     - echo "Building the application..."
-    - npm run generate
+    - yarn generate
   artifacts:
     paths:
       - .output/
@@ -46,7 +47,7 @@ deploy:
   stage: deploy
   before_script:
     - echo "Preparing SSH configuration..."
-    - apk add --no-cache openssh
+    - sudo apt update && sudo apt install -y openssh-client
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa

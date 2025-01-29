@@ -15,7 +15,6 @@
     "@iconify/vue": "^4.1.2",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/i18n": "^8.0.0",
-    "@strapi/plugin-upload": "^4.25.19",
     "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.15.2",
     "prettier": "^3.4.2",
