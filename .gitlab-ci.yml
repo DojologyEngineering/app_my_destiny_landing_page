@@ -19,6 +19,7 @@ variables:
 install_dependencies:
   stage: install
   script:
+    - rm package-lock.json
     - echo "Restoring cache or installing dependencies..."
     - yarn install --frozen-lockfile
     # - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else yarn install; fi
