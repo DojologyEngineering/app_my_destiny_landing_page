@@ -23,7 +23,7 @@ deploy:
       cd $SERVER_PATH &&
       yarn generate --max-old-space-size=2000 &&
       echo 'Restarting server...' &&
-      sudo cp -r $SERVER_PATH/.output/ /var/www/html/ &&
+      sudo cp -r $SERVER_PATH/.output/ /var/www/html/.output/ &&
       echo 'Deployment completed successfully!'"
   after_script:
     - echo "Cleaning up sensitive files..."
