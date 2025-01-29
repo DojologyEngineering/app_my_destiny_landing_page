@@ -19,12 +19,13 @@ deploy:
     - echo "Verifying SSH connection..."
     - ssh "$SERVER_USER@$SERVER_HOST" "echo 'SSH connection successful!'"
     - echo "Deploying application..."
-      set -e &&
-      cd $SERVER_PATH &&
-      yarn generate --max-old-space-size=2000 &&
-      echo 'Restarting server...' &&
-      sudo cp -r $SERVER_PATH/.output/ /var/www/html/.output/ &&
-      echo 'Deployment completed successfully!'"
+    - |
+        set -e
+        cd "$SERVER_PATH"
+        yarn generate --max-old-space-size=2000
+        echo 'Restarting server...'
+        sudo cp -r "$SERVER_PATH/.output/" /var/www/html/.output/
+        echo 'Deployment completed successfully!'
   after_script:
     - echo "Cleaning up sensitive files..."
     - rm -f ~/.ssh/id_rsa
