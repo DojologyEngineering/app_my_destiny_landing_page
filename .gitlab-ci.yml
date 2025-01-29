@@ -20,7 +20,7 @@ install_dependencies:
   stage: install
   script:
     - echo "Restoring cache or installing dependencies..."
-    - yarn install
+    - yarn install --frozen-lockfile
     # - if [ -d node_modules ]; then echo "Cache hit for node_modules."; else yarn install; fi
   artifacts:
     paths:
