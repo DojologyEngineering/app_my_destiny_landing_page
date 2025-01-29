@@ -11,6 +11,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        // xs: { min: '320px', max: '460px' },
+      },
       colors: {
         background: { main: '#F8F9FA' },
         primary: {
