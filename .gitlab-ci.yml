@@ -21,7 +21,6 @@ deploy:
     - echo "Deploying application..."
     - |
         set -e
-        cd "$SERVER_PATH"
         yarn generate --max-old-space-size=2000
         echo 'Restarting server...'
         sudo cp -r /home/ubuntu/md-landing-page/.output/ /var/www/html/.output/
