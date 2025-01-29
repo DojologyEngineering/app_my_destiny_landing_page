@@ -1,4 +1,4 @@
-image: node:latest
+image: node:22.13.1
 
 stages:
   - install
@@ -9,6 +9,7 @@ cache:
   # Cache both node_modules and Nuxt's `.output`
   paths:
     - node_modules/
+    - .output/
   key: '$CI_COMMIT_REF_SLUG' # Cache key based on the branch name
 
 variables:
