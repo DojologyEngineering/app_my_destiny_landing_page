@@ -188,7 +188,7 @@ const { locale } = useI18n();
         </h1>
 
         <p
-          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer"
+          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer max-w-[1000px]"
         >
           {{
             $t(
@@ -247,12 +247,12 @@ const { locale } = useI18n();
       <NuxtImg
         v-if="locale === 'en'"
         src="/images/Scene-2 1.png"
-        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[130%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+        class="absolute right-1/2 xl:left-28 top-1/2 lg:-translate-x-[50%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[130%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
       <NuxtImg
         v-else="locale === 'km'"
         src="/images/Scene-2 1.png"
-        class="absolute right-1/2 top-1/2 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[118%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
+        class="absolute top-1/2 xl:left-28 lg:-translate-x-[40%] md:-translate-x-[10%] sm:-translate-x-[7%] translate-x-[10%] lg:translate-y-[-58%] md:translate-y-[-78%] sm:translate-y-[-88%] -translate-y-[118%] sm:w-[496px] sm:h-[600px] w-[400px] h-[400px] object-cover"
       />
     </div>
 
@@ -280,7 +280,7 @@ const { locale } = useI18n();
         </h1>
 
         <p
-          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer max-w-[800px]"
+          class="text-gray-main font-[400] lg:text-[24px] text-[20px] font-khmer max-w-[700px]"
         >
           {{
             $t(
