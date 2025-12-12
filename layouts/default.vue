@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="min-w-[1280px]">
     <div class="fixed top-14 w-full z-50">
       <Header />
     </div>
