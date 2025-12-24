@@ -1,9 +1,9 @@
 <template>
-  <div class="min-w-[1280px]">
+  <div class="w-full">
     <div class="fixed top-14 w-full z-50">
       <Header />
     </div>
-    <main class="">
+    <main class="w-full overflow-x-hidden">
       <slot />
     </main>
 

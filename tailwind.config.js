@@ -12,7 +12,12 @@ export default {
   theme: {
     extend: {
       screens: {
-        // xs: { min: '320px', max: '460px' },
+        xs: '320px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
       },
       colors: {
         background: { main: '#F8F9FA' },

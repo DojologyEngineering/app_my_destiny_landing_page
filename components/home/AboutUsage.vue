@@ -15,7 +15,7 @@
       class="absolute inset-0 -top-56 md:top-0 z-10 flex items-center justify-center px-5 md:px-0"
     >
       <div class="container mx-auto">
-        <div class="max-w-2xl text-center md:text-left">
+        <div class="max-w-2xl text-center md:text-left pt-6 md:pt-0">
           <p
             class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main mb-4"
           >
