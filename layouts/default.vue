@@ -1,9 +1,9 @@
 <template>
-  <div class="min-w-[1280px]">
-    <div class="fixed top-14 w-full z-50">
+  <div class="max-w-[1280px] mx-auto">
+    <div class="fixed top-14 w-full z-50 max-w-[1280px] mx-auto">
       <Header />
     </div>
-    <main class="">
+    <main class="pt-44">
       <slot />
     </main>
 

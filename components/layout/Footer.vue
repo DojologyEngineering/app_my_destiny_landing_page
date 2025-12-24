@@ -2,7 +2,7 @@
   <footer class="bg-primary-light w-full">
     <div class="container mx-auto pt-8">
       <div
-        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-between justify-center"
+        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-between justify-center ml-5 mr-5"
       >
         <div class="lg:hidden flex flex-row w-full px-5 justify-center gap-3">
           <a
@@ -14,7 +14,7 @@
             <NuxtImg
               :src="name"
               :alt="name"
-              class="w-7 h-7"
+              class="w-10 h-10 md:w-12 md:h-12"
               :placeholder="[50, 25]"
             />
           </a>
@@ -25,7 +25,7 @@
             alt="My Destiny Logo"
             width="259"
             height="227"
-            class="object-contain min-w-[118px] min-h-[104px] md:min-w-[259px] md:min-h-[227px] hidden lg:block"
+            class="object-contain w-full h-auto max-w-[118px] md:max-w-[259px] hidden lg:block"
             :placeholder="[50, 25]"
           />
         </div>
@@ -35,11 +35,11 @@
             alt="My Destiny Logo"
             width="259"
             height="227"
-            class="object-contain min-w-[118px] min-h-[104px] pl-4 lg:hidden"
+            class="object-contain w-full h-auto max-w-[118px] pl-4 lg:hidden"
             :placeholder="[50, 25]"
           />
           <div
-            class="text-center md:flex flex-col items-start gap-y-4 space-y-2 pr-10"
+            class="text-center md:flex flex-col items-start gap-y-4 space-y-2 md:pr-10 pr-2"
           >
             <p
               class="font-khmer text-xs md:text-xl font-bold text-left md:max-w-[380px]"
@@ -114,7 +114,7 @@
                 <NuxtImg
                   :src="name"
                   :alt="name"
-                  class="w-12 h-12"
+                  class="w-14 h-14 md:w-16 md:h-16"
                   :placeholder="[50, 25]"
                 />
               </NuxtLink>
@@ -139,7 +139,7 @@
       class="flex mt-5 py-4 text-sm text-center md:text-left bg-primary-dark sm:flex-start md:flex-start"
     >
       <div class="container mx-auto">
-        <p class="text-khmer md:text-base text-body text-info-text">
+        <p class="text-khmer md:text-base text-body text-info-text ml-5">
           Privacy Policy | Terms and Conditions | Copyright 2025 App My Destiny
         </p>
       </div>

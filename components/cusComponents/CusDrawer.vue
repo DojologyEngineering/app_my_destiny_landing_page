@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="lg:hidden">
     <transition name="slide">
       <div
         v-if="isDrawerOpen"

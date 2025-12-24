@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-info-text md:container md:mx-auto rounded-full shadow-lg mx-5"
+    class="bg-info-text md:container md:mx-auto rounded-full shadow-lg"
   >
     <div class="relative flex flex-row items-center">
       <div class="lg:hidden flex pl-5 w-[45%]">
@@ -24,7 +24,7 @@
 
       <div class="w-[10%] flex justify-center">
         <NuxtLink
-          class="hover:cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-info-text rounded-full shadow-lg p-4"
+          class="hover:cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-info-text rounded-full shadow-lg md:p-4 p-2"
           :to="localePath('/')"
         >
           <div class="md:w-28 md:h-28 w-20 h-20 rounded-full overflow-hidden">

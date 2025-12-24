@@ -3,8 +3,12 @@
     class="flex md:flex-row flex-col align-top bg-primary-main rounded-[44px] p-3 py-9"
   >
     <div class="flex flex-col p-3 items-center">
-      <div class="w-[142px] h-[142px]">
-        <NuxtImg :src="src" class="w-full h-full" :placeholder="[50, 25]" />
+      <div class="w-full h-auto">
+        <NuxtImg
+          :src="src"
+          class="w-full h-full object-contain"
+          :placeholder="[50, 25]"
+        />
       </div>
       <div class="mt-3">
         <p class="text-lg/10 md:text-xl/10 font-khmer font-bold text-gray-main">

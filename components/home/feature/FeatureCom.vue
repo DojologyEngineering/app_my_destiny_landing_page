@@ -3,7 +3,7 @@
     <div class="flex flex-row align-top">
       <NuxtImg
         :src="src"
-        class="w-[97px] h-[97px] md:w-[130px] md:h-[130px] lg:w-[200px] lg:h-[200px] object-contain"
+        class="w-[97px] h-auto md:w-[130px] lg:w-[200px] object-contain"
         :placeholder="[50, 25]"
       />
 

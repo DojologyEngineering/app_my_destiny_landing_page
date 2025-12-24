@@ -8,7 +8,7 @@
           <NuxtImg
             :src="src"
             alt="Icon"
-            class="w-full h-full"
+            class="w-full h-full object-contain"
             :placeholder="[50, 25]"
           />
         </div>

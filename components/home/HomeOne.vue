@@ -5,7 +5,7 @@
         class="flex md:flex-row flex-col-reverse items-center px-5 md:px-0 justify-between"
       >
         <!-- Text Content -->
-        <div class="flex flex-col items-start mt-20 md:mt-0">
+        <div class="flex flex-col items-start mt-20 ml-5 md:mt-0">
           <div class="px-0 md:px-0">
             <p
               class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
@@ -15,7 +15,7 @@
             </p>
           </div>
 
-          <div class="md:mt-8 mt-5 md:px-0 px-0 max-w-[600px]">
+          <div class="md:mt-8 mt-5 md:px-0 px-0 max-w-[800px]">
             <p
               class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
               v-motion-fade
@@ -43,7 +43,7 @@
             <NuxtImg
               src="/images/home-image/qr.png"
               alt="App My Destiny"
-              class="w-[500px] h-full"
+              class="w-[664px] h-full"
               :placeholder="[50, 25]"
             />
           </div>

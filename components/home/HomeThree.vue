@@ -8,7 +8,7 @@
           {{ $t('Features of App My Destiny - វាសនាខ្ញុំ') }}
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 px-5 md:px-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 px-5 md:px-0 mr-5 ml-5">
         <div v-for="item in features">
           <div
             v-motion
