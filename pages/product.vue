@@ -51,7 +51,7 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="flex flex-col justify-center items-center gap-8 py-20 px-4 bg-primary-yellow"
+    class="flex flex-col justify-center items-center gap-8 py-20 px-4 bg-primary-yellow w-full max-w-[1280px] mx-auto"
   >
     <div class="container mx-auto flex flex-col gap-4">
       <h1
@@ -95,7 +95,7 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="flex flex-col gap-20 md:py-20 py-4 px-4 bg-primary-main overflow-x-hidden overflow-y-hidden"
+    class="flex flex-col gap-20 md:py-20 py-4 px-4 bg-primary-main overflow-x-hidden overflow-y-hidden w-full max-w-[1280px] mx-auto"
   >
     <h1
       v-motion
@@ -117,7 +117,7 @@ const { locale } = useI18n();
     </h1>
 
     <div
-      class="bg-primary-yellow-dark relative rounded-[30px] container mx-auto w-fu"
+      class="bg-primary-yellow-dark relative rounded-[30px] container mx-auto w-full"
     >
       <div
         v-motion
@@ -318,7 +318,7 @@ const { locale } = useI18n();
   </div>
 
   <div
-    class="lg:h-auto h-auto flex flex-row items-start justify-center overflow-x-hidden overflow-y-hidden container mx-auto"
+    class="lg:h-auto h-auto flex flex-row items-start justify-center overflow-x-hidden overflow-y-hidden w-full max-w-[1280px] mx-auto"
   >
     <div class="flex lg:flex-row flex-col items-center gap-8 py-20">
       <NuxtImg

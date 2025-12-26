@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-info-text rounded-[30px] md:p-5 p-5 mr-[5%] ml-[5%]">
+  <div class="bg-info-text rounded-[30px] md:p-10 p-5">
     <div class="flex flex-row align-top">
       <NuxtImg
         :src="src"

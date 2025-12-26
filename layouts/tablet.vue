@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-auto">
-    <div class="fixed top-14 w-full z-50 mx-auto">
+  <div class="max-w-[1024] mx-auto">
+    <div class="fixed top-14 w-full z-50 max-w-[1024px] mx-auto">
       <Header />
     </div>
     <main class="pt-44">

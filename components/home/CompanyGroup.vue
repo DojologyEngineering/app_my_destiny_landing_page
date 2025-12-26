@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-white flex flex-col justify-center items-center bg-cover bg-center bg-[url(/images/home-image/coporate.jpg)]"
+    class="text-white flex flex-col justify-center items-center bg-cover bg-center bg-[url(/images/home-image/coporate.jpg)] w-full max-w-[1280px] mx-auto"
   >
     <div class="bg-primary-dark bg-opacity-75 h-full w-full py-16">
       <div class="text-center px-5 md:px-0">

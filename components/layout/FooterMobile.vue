@@ -1,8 +1,8 @@
 <template>
-  <footer class="bg-primary-light w-full max-w-[1280px] mx-auto">
+  <footer class="bg-primary-light w-full max-w-[768px] mx-auto">
     <div class="container mx-auto pt-8">
       <div
-        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-between justify-center ml-5 mr-5"
+        class="flex lg:flex-row flex-col lg:items-start items-center md:justify-between justify-center"
       >
         <div class="lg:hidden flex flex-row w-full px-5 justify-center gap-3">
           <a

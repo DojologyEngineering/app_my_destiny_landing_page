@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-primary-orange-light text-center text-[#5a5a5a] pt-20 md:pt-40"
+    class="bg-primary-orange-light text-center text-[#5a5a5a] pt-20 md:pt-40 w-full max-w-[1280px] mx-auto"
   >
     <div
       class="bg-cover text-info-text bg-[url(/images/contact/map.png)] pb-10"

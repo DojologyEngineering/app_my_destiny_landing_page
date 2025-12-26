@@ -7,11 +7,11 @@
         {{ $t('Vision, Mission, Core Value') }}
       </p>
     </div>
-    <div class="container mx-auto mt-10">
-      <div v-for="item in visions" class="pb-10 md:block hidden mr-5 ml-5">
+    <div class="container mx-auto mt-10 md:mr-10 md:ml-10">
+      <div v-for="item in visions" class="pb-10 md:block hidden">
         <CusItem :des="item.des" :name="item.name" :src="item.image" />
       </div>
-      <div v-for="item in visions" class="pb-10 md:hidden block mr-10 ml-10">
+      <div v-for="item in visions" class="pb-10 md:hidden block">
         <CusItemSmallS :des="item.des" :name="item.name" :src="item.image" />
       </div>
     </div>

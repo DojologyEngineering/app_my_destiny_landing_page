@@ -1,52 +1,43 @@
 <template>
-  <div class="w-full bg-gradient-to-b
-            from-[#F0BB50]/60
-            to-[#E0A837] py-10 md:py-0 max-w-[1280px] mx-auto">
-    <div class="container  px-6 md:px-10 lg:px-20">
-      <div class="flex flex-col md:flex-row items-center md:items-end lg:items-center min-h-[500px]">
+  <div class="w-full bg-gradient-to-b from-[#EBB143] via-[#F1C361] to-[#E3A330]">
+    <div class="container max-w-[768px] mx-auto px-0 md:px-5">
+      <div class="flex flex-col md:flex-row items-center">
         
-        <div class="w-full md:w-1/2 lg:w-[45%] flex justify-center md:justify-start">
+        <div class="relative w-full max-w-[400px] md:max-w-[470px] pt-4">
           <NuxtImg
             src="/images/home-image/MasterNaly.png"
-            class="w-full max-w-[380px] lg:max-w-[470px] h-auto object-contain"
+            class="w-full h-auto object-contain"
             alt="Master Naly Long"
             :placeholder="[50, 25]"
           />
+          <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#F1C361] to-transparent md:hidden"></div>
         </div>
 
-        <div class="w-full md:w-1/2 lg:w-[55%] py-10 md:py-16 text-center md:text-left">
-          <h2 
-            class="font-khmer font-bold text-2xl md:text-3xl lg:text-4xl text-[#8B1E1E] mb-6 lg:mb-8"
-          >
+        <div class="w-full md:ml-16 flex flex-col items-center md:items-start text-center md:text-left px-6 py-8">
+          <h2 class="font-khmer font-bold text-2xl md:text-4xl text-[#8B1E1E] mb-6">
             {{ $t('About App My Destiny - វាសនាខ្ញុំ') }}
           </h2>
 
-          <div v-if="locale == 'km'" class="space-y-4 lg:space-y-6">
-            <p class="font-khmer text-lg lg:text-xl text-[#333333] leading-relaxed">
+          <div v-if="locale == 'km'" class="space-y-6">
+            <p class="font-khmer text-lg text-[#333333] leading-relaxed">
               រូបមន្តហុងស៊ុយសំខាន់ៗមានការទទួលស្គាល់ជាអន្តរជាតិ បានរៀបចំចងក្រង
               យ៉ាងល្អិតល្អន់ ហ្មត់ចត់ និងផ្ចិតផ្ទង់ ដោយ
               <span class="font-bold">ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span>
               ដើម្បីយកមកអភិវឌ្ឍឲ្យក្លាយ ទៅជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រ។
             </p>
-
-            <p class="font-khmer text-lg lg:text-xl text-[#333333] leading-relaxed">
+            <p class="font-khmer text-lg text-[#333333] leading-relaxed">
               <span class="font-bold">ឧកញ៉ាសាស្ត្រចារ្យ ឡុង ណាលី</span>
               បានបញ្ចប់ការសិក្សាផ្នែកវិជ្ជាហុងស៊ុយ
               ពីគ្រូចិនសែល្បីៗនៅលើពិភពលោកជាច្រើនរូបរួមមាន៖....
             </p>
           </div>
-
-          <p v-else class="font-khmer text-lg lg:text-xl text-[#333333] leading-relaxed">
-            {{
-              $t(
-                'The most substantial outcome of Oknha Master Naly Long’s resolute and tenacious commitment, along with her striving, responsibility, morality, and professionalism, is her well-organized plan for discovering, gathering, and compiling practical Strategic and Scientific Feng Shui formulas.'
-              )
-            }}
+          <p class="font-khmer text-xl text-[#333333] leading-relaxed" v-else>
+            {{$t('The most substantial outcome of Oknha Master Naly Long’s resolute and tenacious commitment, along with her striving, responsibility, morality, and professionalism, is her well-organized plan for discovering, gathering, and compiling practical Strategic and Scientific Feng Shui formulas corresponding with accuracy, precision,') }}
           </p>
 
-          <div class="mt-8 lg:mt-12 flex justify-center md:justify-start">
-            <CustomButton url="/contact" class="shadow-md">
-              <span class="text-white text-lg md:text-xl font-khmer px-10">
+          <div class="mt-8 pb-4">
+            <CustomButton url="/contact" class="shadow-lg">
+              <span class="text-white text-lg font-khmer px-8">
                 {{ $t('Learn More') }}
               </span>
             </CustomButton>

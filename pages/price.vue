@@ -26,7 +26,7 @@ const navigateLink = () => {
 
 <template>
   <div
-    class="bg-primary-main md:h-[970px] sm:h-[500px] h-[420px] relative"
+    class="bg-primary-main md:h-[970px] sm:h-[500px] h-[420px] relative "
     v-motion-fade
   >
     <NuxtImg
@@ -36,9 +36,9 @@ const navigateLink = () => {
     />
   </div>
 
-  <div class="bg-primary-brown h-[1077px] relative xl:flex hidden">
+  <div class="bg-primary-brown h-[1077px] relative xl:flex hidden w-full max-w-[1280px] mx-auto">
     <div
-      class="absolute bottom-0 left-0 -translate-x-1/2 w-full container mx-auto"
+      class=" bottom-0 left-0 -translate-x-1/2 w-full container mx-auto"
       v-motion
       :initial="{ y: 200 }"
       :visible-once="{
@@ -59,13 +59,13 @@ const navigateLink = () => {
         placeholder="blur"
       />
 
-      <p class="absolute top-40 left-[400px] text-white text-[48px] font-bold">
+      <p class="absolute top-20 left-[250px] text-white text-[48px] font-bold">
         {{ $t('Price List') }}
       </p>
     </div>
 
     <div
-      class="flex lg:flex-row flex-col items-start gap-32 lg:pb-0 pb-10 container mx-auto justify-end lg:mt-36"
+      class="flex lg:flex-row flex-col items-start gap-32 lg:pb-0 pb-10 container mx-auto justify-end lg:mt-36 mr-10"
     >
       <div class="grid grid-cols-2 gap-12">
         <div

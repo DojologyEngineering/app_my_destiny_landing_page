@@ -121,7 +121,7 @@ useSeoMeta({
     </div>
   </div>
 
-  <div class="relative">
+  <div class="relative w-full max-w-[1280px] mx-auto">
     <NuxtImg
       :placeholder="[50, 25]"
       src="/images/programming-background-with-person-working-with-codes-computer 1.png"

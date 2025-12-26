@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full h-full">
+  <div class="relative h-full mx-auto w-full max-w-[1280px]">
     <NuxtImg
       src="/images/home-image/Sansana.png"
       class="w-full h-auto"

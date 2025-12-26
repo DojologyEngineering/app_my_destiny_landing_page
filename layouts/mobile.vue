@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-auto">
-    <div class="fixed top-14 w-full z-50 mx-auto">
+  <div class="max-w-[768px] mx-auto">
+    <div class="fixed top-14 w-full z-50 max-w-[768px] mx-auto">
       <Header />
     </div>
     <main class="pt-44">
@@ -8,13 +8,13 @@
     </main>
 
     <div class="z-10">
-      <Footer />
+      <FooterMobile />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Footer from '~/components/layout/Footer.vue';
+import FooterMobile from '~/components/layout/FooterMobile.vue';
 import Header from '~/components/layout/Header.vue';
 </script>
 

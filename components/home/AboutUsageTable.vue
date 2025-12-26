@@ -12,7 +12,7 @@
     />
 
     <div
-      class="absolute inset-0 md:-top-56 -top-20 z-10 flex items-center justify-center px-5 md:px-0"
+      class="absolute inset-0 md:-top-56 -top-20 z-10 flex items-center justify-center px-5 md:px-0 mr-[18%]"
     >
       <div class="container mx-auto">
         <div class="max-w-2xl text-center md:text-left">

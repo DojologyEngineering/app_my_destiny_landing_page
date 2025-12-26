@@ -1,11 +1,10 @@
 <template>
   <div class="bg-primary-light pt-36 pb-28">
-    <div class="container mx-auto">
+    <div class="container mx-auto ml-[2.5%]">
       <div
         class="flex md:flex-row flex-col-reverse items-center px-5 md:px-0 justify-between"
       >
-        <!-- Text Content -->
-        <div class="flex flex-col items-start mt-20 ml-5 md:mt-0">
+        <div class="flex flex-col items-start mt-20 md:mt-0">
           <div class="px-0 md:px-0">
             <p
               class="font-khmer font-bold text-2xl md:text-5xl text-colors-red-main"
