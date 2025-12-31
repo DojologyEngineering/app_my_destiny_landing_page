@@ -8,13 +8,13 @@
     </main>
 
     <div class="z-10">
-      <Footer />
+      <FooterTable />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Footer from '~/components/layout/Footer.vue';
+import FooterTable from '~/components/layout/FooterTable.vue';
 import Header from '~/components/layout/Header.vue';
 </script>
 

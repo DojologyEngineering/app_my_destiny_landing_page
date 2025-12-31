@@ -1,13 +1,12 @@
 <template>
   <div
-    class="bg-cover bg-center bg-no-repeat bg-[url(/images/home-image/vr.jpg)]"
-  >
-    <div class="flex justify-center pt-8">
+    class="bg-cover bg-center bg-no-repeat bg-[url(/images/home-image/vr.jpg)] min-h-screen py-10">
+    <div class="flex justify-center mb-12">
       <p class="font-khmer font-bold md:text-5xl text-2xl text-info-text">
         {{ $t('Vision, Mission, Core Value') }}
       </p>
     </div>
-    <div class="container mx-auto mt-10 md:mr-10 md:ml-10">
+    <div class="container mx-auto px-4 md:px-10">
       <div v-for="item in visions" class="pb-10 md:block hidden">
         <CusItem :des="item.des" :name="item.name" :src="item.image" />
       </div>

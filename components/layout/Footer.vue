@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-primary-light w-full max-w-[1280px] mx-auto">
-    <div class="container mx-auto pt-8">
+<footer class="w-full bg-primary-light">
+    <div class="max-w-[1280px] mx-auto px-5 md:px-10 pt-8">
       <div
         class="flex lg:flex-row flex-col lg:items-start items-center md:justify-between justify-center ml-5 mr-5"
       >
@@ -135,12 +135,10 @@
         </nav>
       </div>
     </div>
-    <div
-      class="flex mt-5 py-4 text-sm text-center md:text-left bg-primary-dark sm:flex-start md:flex-start"
-    >
-      <div class="container mx-auto">
-        <p class="text-khmer md:text-base text-body text-info-text ml-5">
-          Privacy Policy | Terms and Conditions | Copyright 2025 App My Destiny
+    <div class="w-full bg-primary-dark mt-10 py-4">
+      <div class="max-w-[1280px] mx-auto px-5 md:px-10 text-center md:text-left">
+        <p class="font-khmer text-xs md:text-base text-info-text opacity-80">
+          Privacy Policy | Terms and Conditions | Copyright 2025 App My Destiny
         </p>
       </div>
     </div>

@@ -40,7 +40,7 @@
 
       <!-- Logo Section -->
       <div
-        class="flex md:flex-row flex-col items-center justify-center gap-8 mt-8"
+        class="flex md:flex-row flex-col items-center justify-center gap-8 mt-16"
       >
         <div class="w-[300px] h-[86px]">
           <NuxtImg

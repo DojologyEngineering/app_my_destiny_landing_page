@@ -44,7 +44,7 @@
     </div>
 
     <div class="bg-info-text">
-      <PartnersFooter />
+      <PartnersFooterMobile />
     </div>
   </div>
 </template>
@@ -52,7 +52,7 @@
 <script setup lang="ts">
 import { features } from '@/utils/home-utils';
 import CustomButton from '../cusComponents/CustomButton.vue';
-import PartnersFooter from '../PartnersFooter.vue';
+import PartnersFooterMobile from '../PartnersFooter.vue';
 import FeatureComMobile from './feature/FeatureComMobile.vue';
 const localPath = useLocalePath();
 </script>

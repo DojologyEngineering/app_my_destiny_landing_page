@@ -24,7 +24,7 @@
       {{ $t('Our Operating Companies') }}
     </h1>
 
-    <div class="hidden lg:flex flex-row items-center justify-center gap-8">
+    <div class="hidden lg:flex flex-row items-center justify-center gap-16">
       <NuxtImg
         v-for="(item, index) in imgPartners"
         :key="index"
@@ -35,7 +35,7 @@
       />
     </div>
 
-    <div class="flex flex-row items-center justify-center gap-8 lg:hidden">
+    <div class="flex flex-row items-center justify-center gap-16 lg:hidden">
       <NuxtImg
         v-for="(item, index) in imgPartners.slice(2, 3)"
         :key="index"
@@ -45,7 +45,7 @@
         :placeholder="[50, 20]"
       />
     </div>
-    <div class="flex flex-row items-center justify-center gap-8 lg:hidden">
+    <div class="flex flex-row items-center justify-center gap-16 lg:hidden">
       <NuxtImg
         v-for="(item, index) in [imgPartners[1], imgPartners[3]]"
         :key="index"
@@ -55,7 +55,7 @@
         :placeholder="[50, 20]"
       />
     </div>
-    <div class="flex flex-row items-center justify-center gap-8 lg:hidden">
+    <div class="flex flex-row items-center justify-center gap-16 lg:hidden">
       <NuxtImg
         v-for="(item, index) in [imgPartners[0], imgPartners[4]]"
         :key="index"
