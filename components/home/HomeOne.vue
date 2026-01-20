@@ -16,13 +16,13 @@
 
           <div class="md:mt-8 mt-5 md:px-0 px-0 max-w-[800px]">
             <p
-              class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
+              class="font-khmer font-normal text-xl md:text-2xl font-normal text-gray-main md:leading-10"
               v-motion-fade
               v-if="locale == 'km'"
             >
               ជា App ហុងស៊ុយបែបវិទ្យាសាស្ត្រតែមួយគត់
               <span
-                class="font-khmer font-bold text-xl md:text-2xl text-gray-dark"
+                class="font-khmer text-xl md:text-2xl text-gray-dark"
                 >របស់ប្រទេសកម្ពុជា</span
               >
               បង្កើតឡើងដោយជនជាតិខ្មែរ ប្រកបដោយស្តង់ដារល្អបំផុត កម្រិតអន្តរជាតិ
@@ -30,7 +30,7 @@
             </p>
             <p
               v-else
-              class="font-khmer text-xl md:text-2xl font-normal text-gray-main"
+              class="font-khmer text-xl md:text-2xl font-normal text-gray-main md:leading-10"
             >
               {{ $t('with_more_than') }}
             </p>
