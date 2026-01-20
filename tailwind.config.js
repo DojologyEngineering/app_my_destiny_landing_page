@@ -48,7 +48,7 @@ export default {
         },
       },
       fontFamily: {
-        khmer: ['"Noto Sans Khmer"', 'sans-serif'],
+        khmer: ['Noto Sans Khmer', 'sans-serif'],
       },
       fontSize: {
         body: '10px',
